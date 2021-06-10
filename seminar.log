@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.7)  10 JUN 2021 18:19
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.7)  10 JUN 2021 18:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/abhinandan/semi/seminar.tex
-(/home/abhinandan/semi/seminar.tex
+**/home/abhinandan/Desktop/seminar/seminar.tex
+(/home/abhinandan/Desktop/seminar/seminar.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -386,47 +386,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 238--253
  []
 
 [4]
-File: s8.png Graphic file (type bmp)
-<s8.png>
- [5]
-Underfull \hbox (badness 10000) in paragraph at lines 303--315
+Underfull \hbox (badness 10000) in paragraph at lines 286--302
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 303--315
+File: s8.png Graphic file (type bmp)
+<s8.png>
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 311--318
 
  []
 
 File: s9.png Graphic file (type bmp)
 <s9.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--364
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 346--364
+Underfull \hbox (badness 10000) in paragraph at lines 349--367
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 382--417
+Underfull \hbox (badness 10000) in paragraph at lines 385--420
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--417
+Underfull \hbox (badness 10000) in paragraph at lines 385--420
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--438
+Underfull \hbox (badness 10000) in paragraph at lines 424--441
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--438
+Underfull \hbox (badness 10000) in paragraph at lines 424--441
 
  []
 
@@ -434,23 +428,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 421--438
 File: s10.png Graphic file (type bmp)
 <s10.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 466--490
+Underfull \hbox (badness 10000) in paragraph at lines 469--493
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 466--490
+Underfull \hbox (badness 10000) in paragraph at lines 469--493
 
  []
 
 [8] [9] (./seminar.aux) ) 
 Here is how much of TeX's memory you used:
  5932 strings out of 481804
- 143961 string characters out of 5937877
+ 143994 string characters out of 5937877
  456369 words of memory out of 5000000
  22874 multiletter control sequences out of 15000+600000
  535919 words of font info for 57 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 43i,15n,67p,1053b,303s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,15n,67p,1064b,303s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on seminar.xdv (9 pages, 308160 bytes).
+Output written on seminar.xdv (9 pages, 308168 bytes).

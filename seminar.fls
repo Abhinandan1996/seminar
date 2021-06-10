@@ -1,9 +1,9 @@
-PWD /home/abhinandan/semi
+PWD /home/abhinandan/Desktop/seminar
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/xetex/xelatex.fmt
-INPUT /home/abhinandan/semi/seminar.tex
+INPUT /home/abhinandan/Desktop/seminar/seminar.tex
 OUTPUT seminar.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
