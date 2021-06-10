@@ -1,0 +1,566 @@
+\documentclass[11pt]{article}
+\usepackage[legalpaper,margin=.6in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{fontspec}
+\usepackage{float}
+\usepackage{tabto}
+\usepackage{caption}
+\setmainfont{Book Antiqua}
+\setlength{\parindent}{0em}
+\setlength{\fboxsep}{0em}
+\setlength{\fboxrule}{1pt}
+\begin{document}
+\rule{\textwidth}{.1em}
+%------------------------------------------------------------------
+%------------------------------------------------------------------
+\begin{center}
+\textbf{Abstract}
+\end{center}
+    This seminar topic focuses on-
+    \\\\(1)The Fundamentals of the fracture mechanics based on the crack tip stress and strain fields and the non-linear fracture mechanics have been developed. Their applications to the studies of fracture initiation and stable crack growth may differ because of the difference in the basic postulates of various fracture theories.
+    \\\\(2)The impact of computational methodology on furthering the understanding of fundamental fracture phenomena. The current numerical approaches to the solution of fracture mechanics problems.
+    \\\\(3)The methodology for probabilistic fracture mechanics analysis (PFM) of structural components with crack-like imperfections. Details are given for the development and application of both a simple nomographic method and a basic numerical tool for PFM applications.
+    \\\\(4)The evaluation of the J-estimation models and the Monte Carlo simulation
+
+    
+
+\rule{\textwidth}{.1em}
+
+%------------------------------------------------------------------
+%------------------------------------------------------------------
+
+\section{Fundamental Basis Of Fracture Mechanics}
+Inglis made the stress analysis of an elliptical hole in a uniformly stressed elastic plate. A crack can be 
+represented by an infinitesimally narrow ellipse. Based on Inglis elastic stress solution to a cracked solid. 
+Griffith formulated his well known energy criterion for brittle fractures. At the fracture initiation of a cracked brittle solid in the 
+condition of fixed grip, the release rate of the stored strain energy equals or exceeds the dissipative surface energy rate.
+\(\partial U_\epsilon / \partial a \geq \partial U_s / \partial a = 2 \gamma \), 
+where $U_d$ and $U_S$ are strain energy and surface energy; $\gamma$,  the surface energy per unit area; and $a$, crack length.$\gamma$ 
+is constant for a given material. Assuming a constant dissipative rate of plastic energy $\Gamma $ , 
+Irwin and Orowan extended the energy criterion to metallic solids, where plastic deformation takes place at crack tips.
+\\\\The crack tip elastic stresses, strains and displacements are characterized by the stress intensity factor, $K$.  
+Incase of small scale yielding, $SSY, K$ characterizes crack tip stresses, strains, and displacements even within a 
+crack tip plastic zone in a metallic specimen. $K$ characterizes cracktip
+stresses, strains and displacements forms the fundamental basis of the linear elastic fracture mechanics rather than 
+the global energy balance. More recently, Hutchinson, and Rice and Rosengren derived the crack tip stress, strain and 
+displacement fields in power law strain hardening 
+materials. The crack tip stress, strain and displacement 
+fields can be characterized by $J$, which is a contour independent 
+integral. $J$ is also the rate of potential energy change during 
+the cracking process in a non-linear elastic solid. $J$ has been 
+widely used to study non-linear fracture mechanics.
+\subsection{Defining Fracture}Figure shows a cracked sample and its load P vs load point displacement, 6. The “crack” suddenly starts to propagate internally at A. The increased crack length increases the compliance of the specimen and causes the sudden load drop from A to A'. As the load increases, the crack continues its internal growth. At B, the crack front at the specimen surface starts to move forward, and the crack continues to grow in a “stable” manner to the maximum load C. D is the point of final separation, fracture mechanics studies the fracture initiation at A and the stable crack growth from A' to B and onwards. Often the point of fracture initiation is not so clearly defined as shown in the figure. In this case, certain degree of arbitrariness has to be introduced in order to define fracture initiation. Fracture can be defined in terms of the above described macro-features or in terms of the micro-structural features such as fracture of brittle inclusions,etc.
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=.45\textwidth]{s1.png}}
+    \captionsetup{labelformat=empty}
+    \caption{load-elongation curve for fracture initiation and stable crack growth}  
+\end{figure}
+\subsection{Elastic Stress Field}Linear elastic fracture mechanics (LEFM) is based on the elastic solution of the crack tip stress field. Williams has shown that in a cracked plate 
+$\sigma_{ij}$, $\epsilon_{ij}$ and $u_i$ can be expressed in terms of:
+\begin{align*} 
+    \sigma_{ij}(r, \theta) &= \frac{k_1}{\sqrt{2 \pi r}} \bar{\sigma}_{ij(1)}(\theta) + k_2 \bar{\sigma}_{ij(2)}(\theta) + k_3 \sqrt{(2 \pi r)}\bar{\sigma}_{ij(3)}(\theta) + ...
+    \\\epsilon_{ij}(r, \theta) &= \frac{k_1}{\sqrt{2 \pi r}} \bar{\epsilon}_{ij(1)}(\theta) + ... \tag{1} \label{1}
+    \\u_{ij}(r, \theta) &= \frac{k_1 \sqrt{(2 r)}}{\pi} \bar{u}_{i(1)}(\theta) + ...
+\end{align*}
+\begin{figure}[h]
+    \begin{center}
+        \fbox{\includegraphics[width=.2\textwidth]{s2.png}   } 
+    \end{center}
+\end{figure}
+
+where $r$ and $\theta$ are polar coordinates, the crack tip is located at the origin of the reference system, and
+the crack line coincides with the line $\theta = \pi, \bar{\sigma}_{ij}, \bar{\epsilon}_{ij}$ and $, \bar{u}_{i}$ give the distributions of their corresponding 
+stress, strain, and displacement components. $k_1, k_2, k_3. . .$ are 
+prescribed by specimen geometry and boundary conditions.
+Fracture takes place at the crack tie: therefore, we have 
+to consider only the stresses and strains in the immediate 
+vicinity of a crack tip. In this region, the first singular terms of 
+these series dominate the stress and strain fields. Irwin writes these singular 
+terms for mode I tensile cracks in the following form:
+\begin{align*} 
+    \sigma_{ij}(r, \theta) &= \frac{K_I}{\sqrt{2 \pi r}} \bar{\sigma}_{ij}(\theta) 
+    \\\epsilon_{ij}(r, \theta) &= \frac{K_I}{\sqrt{2 \pi r}} \bar{\epsilon}_{ij}(\theta) \tag{2} \label{2}
+    \\u_{ij}(r, \theta) &= \frac{K_I \sqrt{(2 r)}}{\pi} \bar{u}_{i}(\theta)
+\end{align*}
+\\The elastic stress or strain field can be separated into two parts dealing with stress distribution and is a function of the coordinates alone.
+ In cracked solids this is $\bar{\sigma}_{ij}(\theta)/\sqrt{(2 \pi r)}$ and 
+ the other part is $K$, or the "stress intensity factor".
+If $K_I$ is known, all $\bar{\sigma}_{ij}, \bar{\epsilon}_{ij}$ and $, \bar{u}_{i}$ are known. Therefore, 
+$K_I$ characterizes crack tip stresses, strains, and displacements.
+Equatione \eqref{2} approximates characteristic creack tip elastic field zone, $r_e$
+\\\\As a crack propagates, the stored strain energy in the plate changes. The strain energy change can be
+calculated. Figure shows the contour of a crack tip under stress. Apply stress $\sigma_{yy}$ in the crack
+increment $\Delta a$. As $\sigma_{yy}$ increases, the two mating crack surfaces close. The necessary work done to close
+the crack within $\Delta a$ is:
+\begin{align*}
+    \Delta W = \int_{0}^{\Delta a} \sigma_{yy}(r', 0)u_y(r, \pi)dr = \frac{(1 - \nu ^ 2)}{E} K_{I}^2 \Delta a \tag{3} \label{3}
+\end{align*}
+for the plane strain case. This is also the amount of strain energy released as the crack moves forward
+under the fixed grip condition. It can be considered as the strain energy flux which flows toward the
+crack tip during fracturing.
+\\\\The rate of the strain energy flux is denoted by G and is also known as crack extension force.
+\begin{align*}
+    G_I = K_{I}^{2}/\bar{E} \tag{4} \label{4}
+\end{align*}
+where $\bar E = E/(1 - \nu^2)$ for plain strain case and $\bar{E} = E$ for plane stress.
+
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=.4\textwidth]{s3.png}}
+    \captionsetup{labelformat=empty}
+    \caption{word done to close the crack increment $\Delta a$}
+    
+\end{figure}
+
+
+
+
+\subsection{Grffith Critertion}
+Griffith proposed the criterion of brittle fracture based on the principle of global energy balance.
+\begin{align}
+    \frac{\partial}{\partial a}(U_\epsilon + U_\gamma) = 0 \tag{5} \label{5}
+\end{align}
+where $U_\epsilon$  is the strain energy and $U_\gamma$ is the surface energy.
+\begin{align*}
+    G = -\frac{\partial U_\epsilon}{\partial a} \ and \ \frac{\partial U_\gamma}{\partial a} = 2 \gamma
+\end{align*}
+which is constant. For a small crack in a large plate, we habbve, at fracture.
+\begin{align*}
+    &G_c = (1 - \nu ^ 2)\frac{\sigma_{c} ^ 2 \pi a}{E} = 2 \gamma \ \ \ and \ \ \ \sigma_c = \sqrt{frac{2 \gamma E}{1 - \nu ^ 2 } \pi a}
+    \\\text{Hence, \ \ \ \ \ \ \ \ \ \ \ \ \ } & \sigma_c \sqrt{(\pi a)} = \text{material constant}
+\end{align*}
+Hence, for perfectly brittle solid $k$ characterizes $\sigma_{ij}$ and $\epsilon_{ij}$.
+For same material and same crack tip elastic stresses and strains, the $K_c$(critical value) must be constant.
+\begin{align*}
+    K_c = \sigma_c \sqrt{(\pi a)} = \text {constant}
+\end{align*}
+
+\subsection{The Extension Of The Griffith Criterion}
+A correct fracture theory should agree with know fracture phenomena. If not, the analysis must 
+be wrong. The fracture stress, $sigma_c$, of a large specimen with a long crack is lower
+than the fracture stress of a small specimen with a short crack as shown schematically in figure
+below.
+
+
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=.4\textwidth]{s4.png}}
+    \captionsetup{labelformat=empty}
+    \caption{Fracture stress of geometrically similar specimens, same thcikness, same material}
+\end{figure}
+
+\subsubsection{Global Energy Balance Theory}
+At fracture we have:
+\begin{align*}
+    \frac{\partial}{\partial a}(U_\gamma + U_\epsilon + U_p) = 0 \tag{6} \label{6}
+\end{align*}
+
+$U_\gamma$ is surface energy; $U_\epsilon$ is strain energy; and $U_p$ is plastic work. 
+It is known that $U_\gamma \ll U_p$. Neglect $U_\gamma$, we get: 
+\begin{align*}
+    \frac{\partial}{\partial a}(U_\epsilon + U_p) = 0 \tag{7} \label{7}
+\end{align*}
+
+This leads to $G_c = (\partial U_p/\partial a)$. In infinite metallic
+plate in the condition that strain prevails due to enough thickness. As
+cracks extend under $\sigma_\infty$, the relation between work dissipation $U_p$
+and crack lengh "2$a$" can be found. The classic plasticity theory shows, $r_p \propto a$ ,
+and $U_p \propto r_{p} ^{2}$ which gives
+
+\begin{align*}
+    \frac{\partial U_p}{\partial a} = Ca
+\end{align*}
+C is proportionality constant, which gives:
+\begin{align}
+    \frac{\sigma_{c}^{2} \pi a (1 - \nu ^ 2)}{E} = Ca \qquad
+\Rightarrow \qquad &\sigma_c = \sqrt{(\frac{CE}{\pi (1 - \nu ^ 2)})} = \text{constant} \nonumber
+\end{align}
+
+The experimental evidences that demonstrate the failure of the global energy balance are well known.
+But they have not been recognized as such. Figure shows the thickness effects on fracture toughness.
+The fracture toughness varies from 40 MPa$\sqrt{\text{m}}$ for KI, to the maximum value of 107 MPa$\sqrt{\text{m}}$. The
+strain energy release rates of the two limiting cases of plane strain and plane stress states differ by a
+factor of $(1 - \nu ^ 2)$. $v$ is Poisson’s ratio. The difference is approximately 10\%. If the plastic energy
+dissipation rate is constant, the difference in fracture toughnesses should not be more than 10\%. The
+large difference in the observed fracture toughnesses in Figure, from the point of view of energy balance,
+must arise from the difference in plastic energy dissipation rates.
+
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics{s5.png}}
+    \captionsetup{labelformat=empty}
+    \caption{Thickness effect on fracture toughness}
+\end{figure}
+In order to explain the observed experimental phenomena, it is necessary to resort to the difference
+in the state of crack tip stress field. The lower plastic energy dissipation rate in the state of plane strain is
+caused by the triaxial state of tensile stress, which causes reductions in effective stress, plastic
+deformation, and plastic energy dissipation; and it causes an increase in maximum tensile stress and an
+earlier fracture initiation. The data clearly indicate that when the crack tip fields of the effective stress
+and the maximum tensile stress change, the fracture toughness will vary.\\\\
+Additional evidences of the failure of global energy balance theory are shown by the results of
+fracture under combined load. If plastic energy dissipation rate is constant, at the point of fracture
+initiation, $(\text{G}_{I} + \text{G}_{II} + \text{G}_{III})$ must be a constant. Experimental evidences have shown that this is far from
+universally true [12]. It is evident that if K fails to characterize the same crack tip field, the global energy
+balance theory fails to work. Therefore the criterion of global energy balance for fracture initiation
+without the consideration of the state of crack tip stresses and the detailed fracture processes, must be
+fortuitous. The global energy balance theory is more suitable to the analysis of the final fracture when
+the three dimensional effects of crack tip stresses and strains and the associated material responses are
+taken into consideration.
+
+\subsubsection{Sharp Notch Analysis}
+All crack tips are “blunted,” so sharp notches and cracks can be considered as equivalents. We will
+consider sharp elleptical notches in large plates under tensile loading in a direction perpendicular to the
+major axis.\\\\
+The fracture stress of a notched specimen depends on notch root radius, $R$, as shown schematically
+in Figure. $\sigma_c$ decreases with $R$. However, if the notch root radius is less than a certain value $R_c$,$\sigma_c$is no
+longer $R$ dependent. When a solid contains a sharp notch of initial root radius $R_i$, the radius increases
+with the applied load. If the root radius increment, $\Delta R$ is much larger than $R_i$, the fracture stress $\sigma_c$ is
+independent of $R_i$. If the size of the fracture process zone, $\rho_F$ is much larger than $R_i$, CT~ will also be
+independent of $R_i$. In our analysis, we assume $R$ is always less than $R_c$.
+
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=.5\textwidth]{s6.png}}
+    \captionsetup{labelformat=empty}
+    \caption{Fracture stress as a function of crack tip radius}
+\end{figure}
+
+Let us consider geometrically similar elliptical notches in geometrically similar specimens. The major
+axis of the ellipse is 2$a$. All the specimens are stressed to the same value of $\sigma_c$. In this case, each
+component of $\sigma_{ij}$ or $\epsilon_{ij}$ in all of these specimens has the same value at the geometrically similar points,
+$P((r/a), \theta)$. If $\sigma_{ij}$ or $\epsilon_{ij} $control the fracture process and if one specimen fails at a given $\sigma_\infty$ all the
+specimens should fail at the same applied stress $\sigma_\infty$, which again contradicts the experimental observations.
+
+
+\subsubsection{The Theory Of K-characterization}
+Under the condition of small scale yielding, SSY, $K$ characterizes the crack tip stresses and strains
+even within $r_p$. Let us illustrate this with two samples of different geometry but they are loaded to the
+same $K$-value. These samples are made of the same material and have the same thickness
+\\\\
+Within the region of $r_c(\theta)$ near the cack tip, the singular terms, $\sigma_{ij} = (K/\sqrt{(2 \pi r)} \bar{\sigma}_{ij}(\theta))$
+dominate the stress field. $r_e$ is the characteristic elastic crack field zone. For elastic solids, if $r_{e1} = r_{e2}$ the boundary
+stresses on $r_{e1}$ and $r_{e2}$ must be equal to each other, since $K_1 = K_2$.
+\\\\
+In metallic specimens, closer to the crack tip, plastic deformation takes place within $r_p(\theta)$. Let us
+examine the regions within $r_{e1}$ and $r_{e2}$ as free bodies given below:
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=.5\textwidth]{s7.png}}
+    \captionsetup{labelformat=empty}
+    \caption{Two different fracture toughness specimens, $K_1 = K_2$ }
+\end{figure}
+In our case, $r_{e1}(\theta) = r_{e2}(\theta)$. If $r_p \ll r_e$ the
+stress relaxation within $r_p$ does not disturb much the boundary stresses on $r_e$, therefore, the boundary
+stresses on $r_e$ are essentially those given by the singular terms of the linear elastic solution. Since
+$K_1 = K_2$, the boundary stresses on these two free bodies must be the same. With the same geometric
+shape and size and the same boundary stresses, we must have:
+
+\begin{align*}
+    &\sigma_{ij}(r, \theta)_1 = \sigma_{ij}(r, \theta)_2 \\
+    &\epsilon_{ij}(r, \theta)_1 = \epsilon_{ij}(r, \theta)_2 \tag{8} \label{8}
+\end{align*}
+$K_c$ is invariant to planar geometric variation.
+ 
+\begin{align*}
+    \begin{array}{@{}c@{}} a\\L \end{array} \geq 2.5 \left( \frac{K_c}{\sigma_c}\right) ^2 \tag{9} \label{9}
+\end{align*}
+The crack tip $\sigma_{ij}$ and $\epsilon_{ij}$ are not only affected by the planar dimensions of “a” and “L”. They are also
+strongly affected by the specimen thickness, t.The size requirements needed to
+satisfy the condition of SSY and that of plane strain are
+ 
+\begin{align*}
+    \begin{array}{@{}c@{}} t\\a\\L \end{array} \geq 2.5 \left( \frac{K_c}{\sigma_c}\right) ^2 \tag{10} \label{10}
+\end{align*}
+The condition of $r_e \gg r_p$ is known as the condition of small scale yielding. Wilson has found that
+the size of $r_e$ is quite small when compared with other specimen dimensions, only a few per cent of other
+planar dimensions of a sample. However, $r_e \propto specimen\ size$; so, in principle, the
+condition of SSY can always be satisfied by using a large enough sample. The condition of $r_e$ is a
+sufficient but not necessary condition for the validity of the LEFM. The condition could be unduly
+restrictive in terms of specimen size requirements. The necessary condition for the validity of the linear
+elastic fracture mechanics is that $K$ would be able to characterize the crack tip stress or strain
+component at the location of the defined fracture process.
+
+\subsection{Fracture Process Zone}
+Materials are inhomogeneous. They contain brittle and ductile phases, inclusion particles, grain
+boundaries, etc. Fracture initiation in a cracked solid is often in the interior of a specimen, where the
+high tensile stress exists at the locations of brittle and weak materials. Once a local fracture is initiated,
+it spreads out. For example, local fracture may start at inclusion 1 (Figure below). The fracture at inclusion I
+increases the stress at inclusion 2, and the increased stress causes the fracture of inclusion 2. Ductile
+fracture takes place between the brittle particles. If the brittle inclusions are large and closely spaced, it
+may cause an avalanche effect, one particle fracturing rapidly after the other. The fracturing process
+stops when the crack is out of the zone of the high tensile stress in the plane strain triaxial state of
+tension. The crack extension could be sizable and could cause noticeable load drop. This is the well
+known phenomenon of pop-in and is a $local instability$. Hence, $K_{lc}$ is the result of a local instability
+phenomenon, not a global instability.
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=.4\textwidth]{s8.png}}
+    \captionsetup{labelformat=empty}
+    \caption{Brittle inclusions ahead of a crack tip.}
+\end{figure}
+Local fractures may also occur through interface separation between particles and matrix; it may
+occur at the embrittled grain boundary, where a high enough tensile stress exists in the plane of the
+embrittled grain boundary. The weakened grain boundary may be caused by temper embrittlement,
+hydrogen embrittlement, and embrittlement by $\text{O}_\text{2}$, $\text{Cl}_\text{2}$ or other chemicals.
+\\\\
+Both fracture initiation and stable crack growth are phenomena of local instability. Therefore, the
+local energy balance rather than the global energy balance should be used. In order to do so, we need to
+treat materials as inhomogeneous substances.
+\\\\
+The condition of small scale yielding, that enables K to characterize crack tip stresses and strains
+responsible for the fracture process, gives the size requirements for the linear elastic fracture mechanics
+eqns (9) and (10). In addition, we should impose the condition
+\begin{align*}
+    \rho_F < r_e \tag{11} \label{11}
+\end{align*}
+for composite materials. The J-integral removes the requirements for a and L. But an additional size
+requirement
+\begin{align*}
+    \rho_F < r_{cp} \tag{12} \label{12}
+\end{align*}
+needs to be imposed for metallic fractures. A thickness requirement is also needed for plane strain case.
+\subsection{Fracture Toughness And Fracure Ductility}
+The initiated local fracture will continue to propagate. The extent of fracture propagation varies
+according to the “brittleness” of the material. The fracturing processes can be classified in three
+categories.
+(1) Once initiated, the localized fracture will continue to grow rapidly across the specimen without
+further increase in $\sigma_\infty$ or $K$. It is very brittle (Fig. a).
+(2) Once initiated, the localized fracture will continue to grow to a sizable extent in a rapid manner
+while ($\sigma_\infty$ and $K$ drop. After the initial fracture, it needs to increase $K$ in order to continue to grow
+further (Fig. b).
+Fracture is initiated in the interior in the plane strain region, and the initial fracturing process will
+stop when the crack is out of the zone of triaxial state of tension.
+
+(3) If fracture initiation is caused by brittle particles and if the brittle particles are small and far
+apart, once the local fracture is initiated, it needs a considerable amount of plastic deformation to grow
+across the regions between particles. A crack grows primarily by the process of plastic deformation.
+This material is ductile and tough (Fig. c).
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=.5\textwidth]{s9.png}}
+    \captionsetup{labelformat=empty}
+    \caption{Schematic diagrams of load vs load point displacement showing difference in fracture ductility}
+\end{figure}
+$K$ and $J$ characterize $\sigma_{ij}$ and $\epsilon_{ij}$ within the fracture process zone. The maximum tensile stress, $\sigma_{\text{max}}$,
+could be the parameter that controls fracture initiation in the case of brittle particles, The nucleated
+crack may then propagate rapidly for a clear definition of $K_{lc}$. as shown in Fig. (a) and (b). In this
+case, $K_{lc}$ might be correlated with $\sigma_{\text{max}}$. On the other hand, if the particles are small and far apart, the
+nucleated minute local fractures will grow by a mechanism which needs a great deal of plastic
+deformation. If $K_{lc}$ is defined by a specific amount of crack growth, primarily by a mechanism of plastic
+deformation, $K_{lc}$ will be correlated better with the effective plastic strain, $\bar{\epsilon} ^ p$. If a crack propagates by
+the shear-off process between the ductile matrix and hard second phase, then the maximum shear strain
+should be used. The beauty of both of the linear and non-linear fracture mechanics, is that both the $K$
+and $J$ can be used in all of the illustrated cases, because $K$ and $J$ characterize all the stress and strain
+components, as well as their combinations such as $\bar{\sigma}$, $\sigma_{\text{max}}$, $\bar{\epsilon} ^ p$, $\gamma_{\text{max}}$, and strain energy density if the
+condition of $\rho_F < r_{cp}$is satisfied.
+\\\\
+$K$ and $J$ are macro-parameters. As long as they can characterize the stresses and strains at the
+location of fracture initiation and fracture propagation, they can be used to measure fracture toughness
+regardless of the details of the initiation and propagation processes. Clearly, we use $K$ and $J$ as indirect
+parameters which do not infer any specific fracture process.
+\\\\\rule{\textwidth}{.1em}
+
+
+
+%------------------------------------------------------------------
+%------------------------------------------------------------------
+\section{Computational Fracture Mechanics}
+This topic focuses on the impact of computational methodology on furthering the understanding of fundamental fracture phenomena. The current numerical approaches to the solution of fracture
+mechanics problems, e.g. finite element (FE) methods, finite difference methods and boundary element
+methods, are reviewed. The application of FE methods to the problems of linear elastic fracture problems
+is discussed. A special focus is placed on stable crack growth problems. The need for further research in this
+area is emphasized. The importance of large strain phenomena and accurate modeling of non-linearities
+is highlighted. An expanded version of fracture mechanics methodology is given by Liebowitz \textit{[Advances  in Fracture Research 3. Pergamon Press, Oxford (1989)]}; additional treatment is given in this paper to
+numerical results incorporating error estimates and algorithms for mesh design into the FE code. The
+adaptive method involves various stages which includes FE analysis, error estimation/indication, mesh
+refinement and fracture/failure analysis iteratively.
+
+%------------------------------------------------------------------
+\subsection{Numerical Methods For Solution Of Fracture Problems}
+The problems of fracture mechanics reduce to the solution of boundary value problems (which may
+be static or dynamic) which have mixed boundary conditions. The shape and the mixed boundary
+conditions can give rise to singularities in the stress and strain fields. The problems may involve
+both material and geometric non-linearities, which complicate the formulation and render
+prediction of convergence extremely difficult. Because little can be done with these problems
+analytically, numerical methodologies are required.
+\\\\
+The \textit{finite difference} method is the oldest technique for the solution of boundary value
+problems. The method directly involves the solution of the
+governing differential system in an approximate manner by subdividing the domain of interest into
+a connected series of discrete points called nodes. These nodes are the sampling points for the
+solution and are linked using the finite difference operators to the governing equations. Employment 
+of the finite difference operators results in a system of algebraic equations for the discrete
+nodal values of the field variable. The finite difference method can be used to discretize both space
+and time. The finite difference method is difficult to use for irregularly shaped domains or for problems involving
+singularities, because the fine meshing required near a singularity cannot easily be reduced for the
+rest of the domain. 
+\\\\
+\textit{Integral equation methods} basic approach employed involves an analytic formulation
+of the elasticity problem to the point of a singular integral equation. The singularity is then
+extracted and the result is a non-singular integral equation which can be solved quite accurately
+with any number of techniques. This approach yields excellent solutions; however, it requires an
+extensive analytic formulation which is different for each new problem. The method is quite useful,
+nonetheless, for establishing benchmark solutions to compare with other methods as the degree
+of accuracy can be guaranteed. The method is only applicable to elasticity problems (without
+non-linearities). For three-dimensional problems, the derivation of the integral equations becomes
+quite laborious.
+The \textit{Boundary Integral Equation  Method} (BIEM) is a numerical approach to the solution of
+linear boundary value problems with known Green's function solutions. The boundary of the
+domain of interest is discretized using "elements" which are interconnected at discrete points called
+nodes. For a three-dimensional problem, the mesh is two-dimensional; for two-dimensional
+problems, the mesh is one-dimensional. The boundary value problem is formulated as an equivalent
+surface or line integral using the Green's function solution and the governing differential system.
+For linear elasticity in two dimensions, the formulation is based on Betti's theorem and the resulting
+system of equations is given by
+\begin{align*}
+    C_{ij}u_j + \int_{\varGamma} T_{ij}u_j  \,d\varGamma + \int_{\varGamma} U_{ij}t_j  \,d\varGamma \tag{13} \label{13}
+\end{align*}
+
+where $U_i$ and $t_i$ are the surface displacement and traction vectors on the domain boundary, and
+$U_{ij}$ and $T_{ij}$ are related to the Green's function solutions for displacements and tractions,
+respectively. At each boundary point, either $u_j$ is specified (on $\varGamma_u$) or $t_j$ is specified on ($\varGamma_t$), while
+the variable is unknown.
+\\\\
+For static problems, the BIEM
+reduces to the solution of a system of dense linear equations which may be non-symmetric. If
+surface data are the only quantities required (as is the case in many fracture problems where the
+only interesting results are the stress intensity factors and the compliance), the BIEM is often
+computationally superior to the FEM for two-dimensional problems. If interior data are required,
+the method is computationally costly. For three-dimensional problems, BIEM solutions are often
+very expensive as the resulting linear system is dense, unbanded and often non-symmetric, and often
+do not produce good solutions.
+\\\\
+The \textit{Finite Element Method} is the most widely employed numerical method for fracture mechanics problems.
+The formulation of the FEM is based on a variational statement of the governing physics. For the
+problems of linear elasticity, the Principle of Virtual Work, given by
+\begin{align*}
+    \int_{v}\sigma_{ij} \delta \epsilon_{ij} \text{d} V = \int_S \sigma_{ij} n_j \delta u_i \text{d} S \tag{14} \label{14}
+\end{align*}
+which is employed, where $\sigma_{ij}$ is the stress tensor, $\delta \epsilon_{ij}$ is the virtual strain tensor due to virtual displacements
+$\delta u_i$ and $n_j$
+is the normal vector to the surface of applied tractions. The domain is discretized into
+subdomains (elements) which are interconnected through common discrete points (nodes). The
+primary unknown field variables are nodal values. The formulation reduces the problem to the
+solution of a system of algebraic equations in terms of the nodal variables (for dynamic problems,
+the result is a system of ordinary differential equations). Finite element systems tend to be relatively
+banded and symmetric for most problems.For fracture mechanics problems, the FEM can be employed in the standard manner or
+modified to account for the singular nature of the near crack fields.
+
+
+\begin{center}
+    \begin{tabular}{ l l l } 
+     \hline
+    Method             & Strengths &weaknesses\\\\ \hline
+    \\Finite differece   & $\begin{array}{@{}l@{}} \text{Easy to employ}\\\text{Error estimates available} \end{array}$& $\begin{array}{@{}l@{}} \text{Slow convergence}\\\text{Uniform mesh requirement} \\\text{Cannot model singularities}\end{array}$ \\\\\hline
+    \\Finite elements    & $\begin{array}{@{}l@{}} \text{Good convergence}\\\text{Singularities can be modeled} \end{array}$ &  $\begin{array}{@{}l@{}} \text{Modeling is difficult}\\\text{Few existing error estimators} \end{array}$ \\\\\hline
+    \\Boundary element   & $\begin{array}{@{}l@{}} \text{Modeling is easier}\\\text{Error estimation is easy} \end{array}$ &$\begin{array}{@{}l@{}} \text{computationally more expensive }\\\text{Converges slowly for singular problems} \end{array}$\\\\\hline
+    \\Hybrid approaches  & $\begin{array}{@{}l@{}} \text{Good for specific problems}\\\text{Generally very accurate} \end{array}$& $\begin{array}{@{}l@{}} \text{Usually developed for restricted problem class}\\\text{difficult to implement} \end{array}$\\ 
+     \\\hline
+    \end{tabular}
+\end{center}
+%-----------------------------------
+\subsection{Impact Of FEM On LEFM}
+\subsubsection{Stress Intensity Factors}
+The ability to predict accurately the stress intensity factors for cracked elastostatic bodies using
+standard numerical techniques has greatly advanced the use of LEFM concepts in application.
+Most commercial
+FEM and BIEM codes have two-dimensional elastostatic fracture capabilities built-in and
+automated.
+\\\\
+The prediction of three-dimensional stress intensity factor distributions is not a straightfor-
+ward process. Research in this area has been ongoing for more than 10 years. Special singular
+elements have been proposed by Tracey , Blackburn and Hellen, Hilton and others. These
+singular elements are based on employment of the asymptotic displacement field in the finite
+element formulation directly. The element geometry is the same as the corresponding standard
+elements. As analyzed elsewhere, these approaches require the assumption of a local state
+of plane strain near the crack front which has not been established analytically. They must be
+utilized, therefore, with discretion.
+\\\\
+Once the FE field solutions are obtained, there are essentially two approaches to calculate the
+stress intensity factors: the multi-term displacement field approach and the nodal force
+approach. These approaches are based on the asymptotic displacement field and stress field
+near the crack front, given as
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=.55\textwidth]{s10.png}}
+    \captionsetup{labelformat=empty}
+    \caption{Three-dimensional crack geometry.}  
+\end{figure}
+
+
+\begin{align*}
+    &u_{1}^{1} = \left(\frac{1 + \nu}{E}\right)\left(\frac{2r}{\pi}\right) ^{1/2} \left\{K_I\cos\frac{\theta}{2}\left[(1-2\nu)+\sin ^ 2 \frac{\theta}{2}\right] + K_{II}\sin \frac{\theta}{2}\left[2(1 - \nu) + \cos ^ 2 \frac{\theta}{2}\right]\right\}\\
+    &u_{2}^{1} = \left(\frac{1 + \nu}{E}\right)\left(\frac{2r}{\pi}\right) ^{1/2} \left\{K_I\sin\frac{\theta}{2}\left[2(1-\nu)+\cos ^ 2 \frac{\theta}{2}\right] - K_{II}\cos \frac{\theta}{2}\left[2(1 - \nu) + \sin ^ 2 \frac{\theta}{2}\right]\right\}
+ \\ &u_{2}^{1} = 2\left(\frac{1 + \nu}{E}\right)\left(\frac{2r}{\pi}\right) ^{1/2} K_{III}\sin \frac{\theta}{2} \tag{15} \label{15}\
+ \\&\sigma_{ij} = \frac{K_{I}}{\sqrt{r}}f_{ij}(\theta) + \frac{K_{II}}{\sqrt{r}}g_{ij}(\theta) + \frac{K_{I}}{\sqrt{r}}f_{ij}(\theta) + \frac{K_{III}}{\sqrt{r}}h_{ij}(\theta) \tag{16} \label{16}
+\end{align*}
+
+
+where$ f_{ij}, g_{ij}$ and $h_{ij}$ are known functions of $\theta$; the local coordinate system is defined.
+It should bementioned that, due to the assumption of local plane strain in the neighborhood of the crack front,
+the multi-term displacement method can yield erroneous results where crack front curvatures are
+large or as the crack front approaches a free surface.
+
+\subsubsection{Energy Release And J-integral}
+
+The Griffith energy release theory of LEFM is widely accepted as a criterion for fracture proof
+design. This theory involves the calculation of the amount of energy released with a virtual
+extension of the crack. The criterion originally proposed by Griffith requires that the crack can
+be idealized as a line of discontinuity and that the remote loading is tensile and normal to the crack.
+In other words, it is restricted to a two-dimensional linear, elastic mode I fracture problem. In such
+a case, it is well known that the energy release rate can be related to the stress intensity factor $K_1$
+and the path independent $J$-integral as follows:
+
+\begin{align*}
+    G = J = \pi (\kappa + 1 ) K_{I}^{2}/ 8 \mu \tag{17} \label{17}
+\end{align*}
+
+where $\kappa = 3 - 4 \nu$ for plane strain and $\kappa = (3 - \nu)/(1 + \nu)$ for generalized plane stress;
+the $J$-integral is defined as
+\begin{align*}
+    J = \int_\varGamma (U \text(d)y - \sigma_{ij} n_j u_{i, x}\text{d}s) \tag{18} \label{18}
+\end{align*}
+
+For two-dimensional mixed mode fracture problems, if the crack is to extend along the line
+of the crack, i.e. self-similar crack extension, then the $G - J - K$ relation is given as
+\begin{align*}
+    G = J = \pi (\kappa + 1)(K_{I}^{2} + K_{II}^{2})/8\mu \tag{19} \label{19}
+\end{align*}
+If the line of crack extension deviates from the crack line by an angle $\theta$, then the energy release
+rate is obtained as
+\begin{align*}
+    G(\theta) = \pi(\kappa + 1)(1 + c)[K_{1}^{2}(1+c) + K_{11}^2(5-3c)-4K_{1}K_{11}s]/32\mu \tag{20} \label{20}
+\end{align*}
+It is emphasized that the energy release rate theory originally proposed by Griffith is now
+generalized; eq. (20) is the general $G - K$ relation; the value of $G_{max}$ is greater than that of $G$ obtained
+from eq. (19) for self-similar crack extension; and $G_{max}$ is greater than the value of the $J$-integral
+and hence it is fair to say that the $J$-integral is only applicable to self-similar crack extension
+problems.
+\subsubsection{Dynamic Crack Propogation}
+In addition to the study of static LEFM problems, much work has been performed for
+dynamic LEFM problems. In the dynamic case, two problems are important: that of a running
+crack and that of a static crack with elastic waves impinging. The problem of stress intensity factor
+calculation for static cracks in elastic materials subjected to time-dependent loading is no more
+difficult than the corresponding static problem. The same solution methodologies are employed and
+the results can be calculated to the same accuracy. Computational requirements are greater;
+however, no new problems arise numerically. The problem of a running crack in an elastic material
+is much different from the problem of a static crack. FEM solutions have had a major impact on
+this area. Few analytic solutions to realistic problems are available (even in two dimensions);
+therefore, robust numerical approaches are essential. The first realistic solution to the problem of
+a running crack was presented by Anderson. They introduced a nodal release algorithm
+which models the changing boundary conditions of a growing crack. The method has proved to
+be very robust and easy to implement, even in commercial finite element codes, and is widely
+employed. This algorithm has allowed many researchers to study running crack problems for a wide
+variety of geometries and loadings. Many examples are available in the literature; a good review
+is given by Williams and Knauss. An interesting example of dynamic crack propagation
+simulation involves the problems of interacting cracks. Consider the problem of two cracks in a
+sheet which are opened by wedge loads. The cracks at two sides of the sheet are slightly
+misaligned to provide initial asymmetry. Figure 4 shows the cracks at three stages of the analysis.
+Initially, the cracks repel each other and, as propagation continues, they attract. At the final stage,
+the two cracks intersect. Figure 5 shows the stress intensity factor histories as a function of crack
+length. The positive mode II component is evident during the avoidance stage and negative mode
+II is evident during attraction.
+
+\end{document}  
