@@ -3,17 +3,75 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{fontspec}
+\setmainfont{Book Antiqua}
 \usepackage{float}
 \usepackage{tabto}
 \usepackage{caption}
-\setmainfont{Book Antiqua}
+\usepackage{setspace}
+
 \setlength{\parindent}{0em}
 \setlength{\fboxsep}{0em}
 \setlength{\fboxrule}{1pt}
 \begin{document}
+\begin{center}
+    \topskip0pt
+    \vspace*{\fill}
+    \textbf{\huge Probabilistic Fracture Simulation}
+   \textbf{\\[.75in]\Large A SEMINAR REPORT\\~\\}
+    \textit{\large Submitted in the partial fulfillment of the award of the degree of}\\[.55in]
+    \textbf{\Large MASTER OF TECHNOLOGY}\\~\\\textit{\Large in}\\~\\ \textbf{\Large STRUCTURAL ENGINEERING}
+    \\~\\~\\~\\{\Large By}\\~\\  \textbf{\Large ABHINANDAN SHARMA}\\~\\~\\
+    Under the Guidance of
+    \textbf{\\~\\\Large PROF. RAJIB CHOWDHURY}\\~\\~\\
+    \includegraphics[width=.3\textwidth]{iitr.png}\\~\\~\\
+    {\large STRUCTURAL ENGINEERING GROUP\\~\\
+DEPARTMENT OF CIVIL ENGINEERING\\~\\
+INDIAN INSTITUTE OF TECHNOLOGY ROORKEE\\~\\
+ROORKEE- 247667, UTTARAKHAND, INDIA.\\~\\
+MAY 2021}
+    \vspace*{\fill}
+\end{center}
+\pagebreak  
+
+%----------------------------------------------------------------
+\begin{center}
+\textbf{ \LARGE   INDIAN INSTITUTE OF TECHNOLOGY ROORKEE\\
+ROORKEE - 247667\\~\\
+\includegraphics[width=.3\textwidth]{iitr.png}\\~\\
+\underline{CANDIDATE'S DECLARATION}\\}
+\end{center}
+\begin{doublespace}
+    {\large I hereby declare that work being presented in this report, entitled \textbf{\large "Probabilistic Fracture Simulation"} 
+    towards partial fulfillment of the requirements for the award of the degree of \textbf{\large "Master of Technology in Structural Engineering"}
+    submitted to
+    the Department of Civil Engineering, Indian Institute of Technology, Roorkee, is an authentic
+    record of my own work carried out under the guidance of \textbf{Dr. Rajib Chowdhury}, Associate
+    Professor, Department of Civil Engineering, IIT Roorkee.\\~\\
+    The matter presented in this thesis has not been submitted by me for the award of any other
+    degree of this or any other Institute.\\~\\
+    }    
+\end{doublespace}
+\begin{minipage}[t]{7cm}
+\flushleft
+\textsc{Relator}
+
+Prof. NameName\\
+\end{minipage}
+\hfill
+\begin{minipage}[t]{7cm}
+\flushright
+\textsc{Candidato}
+
+Name Name\\
+Matricola: XXXXX
+\end{minipage}
+
+
+\pagebreak
+
+%------------------------------------------------------------------
+
 \rule{\textwidth}{.1em}
-%------------------------------------------------------------------
-%------------------------------------------------------------------
 \begin{center}
 \textbf{Abstract}
 \end{center}
@@ -556,14 +614,48 @@ a running crack was presented by Anderson. They introduced a nodal release algor
 which models the changing boundary conditions of a growing crack. The method has proved to
 be very robust and easy to implement, even in commercial finite element codes, and is widely
 employed. This algorithm has allowed many researchers to study running crack problems for a wide
-variety of geometries and loadings. Many examples are available in the literature; a good review
-is given by Williams and Knauss. An interesting example of dynamic crack propagation
+variety of geometries and loadings.  An interesting example of dynamic crack propagation
 simulation involves the problems of interacting cracks. Consider the problem of two cracks in a
 sheet which are opened by wedge loads. The cracks at two sides of the sheet are slightly
-misaligned to provide initial asymmetry. Figure 4 shows the cracks at three stages of the analysis.
+misaligned to provide initial asymmetry. Figure shows the cracks at three stages of the analysis.
 Initially, the cracks repel each other and, as propagation continues, they attract. At the final stage,
 the two cracks intersect. Figure 5 shows the stress intensity factor histories as a function of crack
 length. The positive mode II component is evident during the avoidance stage and negative mode
 II is evident during attraction.
+
+
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=\textwidth]{s11.png}}
+    \captionsetup{labelformat=empty}
+    \caption{Displacement plots during crack propagation}  
+\end{figure}
+
+\subsubsection{Adaptive Finite Element Analysis}
+One of the biggest problems with finite element analysis (FEA) lies in the fact that an
+assessment of the reliability of the FE solution is difficult to obtain. The FE
+analyst is usually guided by experience in designing and assessing the quality of the mesh. After
+solution, simple checks, such as examining the stress discontinuities between elements, can be made
+to assess the quality of the solution. Based on the analyst's experience the solution is accepted or
+rejected. If this approach can be automated, not only would the solution be improved but a large
+saving in man-hours would be made.
+\\\\
+The projection or stress smoothing type error estimators are a global measure of the
+discretization error contained in any given FEA. For adaptive schemes the local error does tend
+to approach the global (average) error in an iterative fashion. The basic idea of these estimators
+is that an approximation of the error due to the mesh discretization can be made given the FEA
+solution and an appropriate better approximation to the continuous stress solution. Adaptive mesh
+generation can be approached in a variety of ways, the two most common being the h- and
+p-versions. The h-version improves the accuracy of the solution by refining the mesh, while the
+p-version uses a fixed mesh but increases the polynomial degree of the shape functions. In the
+present work the projection type error estimators combined with h-version mesh refinement
+algorithms which use quadrilateral elements are investigated for two-dimensional linear elastic
+problems. The mesh refinement algorithms are based on simple [47] and hierarchical [48] schemes
+for subdividing quadrilaterals with transitioning, which avoids the need for constraint equations
+to enforce compatibility at element boundries. Another scheme is based on using constraint
+equations to enforce compatibility between elements. This h-version will not have as high a
+convergence rate as a combined h-p-version (or even a p-version), but the h-version is easier to
+program and the results are easier to interpret,
+
 
 \end{document}  
