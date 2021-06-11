@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.7)  12 JUN 2021 02:57
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.7)  12 JUN 2021 03:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -464,11 +464,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 346--361
 
  []
 
-[8]
+
 Underfull \hbox (badness 10000) in paragraph at lines 394--410
 
  []
 
+[8]
 File: s8.png Graphic file (type bmp)
 <s8.png>
 
@@ -478,17 +479,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 419--426
 
 File: s9.png Graphic file (type bmp)
 <s9.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--475
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--475
+
+ []
+
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 457--475
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 457--475
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 493--528
 
  []
@@ -568,21 +569,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 711--761
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 762--790
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 762--790
+
+ []
+
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 762--790
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 762--790
-
- []
-
 File: s13.png Graphic file (type bmp)
 <s13.png>
 File: s14.png Graphic file (type bmp)
 <s14.png>
-[15]
+ [15]
 Underfull \hbox (badness 10000) in paragraph at lines 817--835
 
  []
@@ -619,4 +621,4 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  43i,15n,79p,1061b,303s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on seminar.xdv (17 pages, 479588 bytes).
+Output written on seminar.xdv (17 pages, 479604 bytes).

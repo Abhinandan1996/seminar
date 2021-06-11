@@ -1,11 +1,11 @@
 # Fdb version 3
-["xdvipdfmx"] 1623446859 "seminar.xdv" "seminar.pdf" "seminar" 1623446859
-  "seminar.xdv" 1623446858 479588 6c0a4636ce48d073d5789346c89a379d "xelatex"
+["xdvipdfmx"] 1623448441 "seminar.xdv" "seminar.pdf" "seminar" 1623448442
+  "seminar.xdv" 1623448441 479604 5e8f1c7eb49524caa147659692c767fa "xelatex"
   (generated)
   "seminar.pdf"
-["xelatex"] 1623446858 "/home/abhinandan/Desktop/seminar/seminar.tex" "seminar.xdv" "seminar" 1623446859
+["xelatex"] 1623448440 "/home/abhinandan/Desktop/seminar/seminar.tex" "seminar.xdv" "seminar" 1623448442
   "/etc/texmf/web2c/texmf.cnf" 1623063391 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/abhinandan/Desktop/seminar/seminar.tex" 1623446857 58902 1eb7d56a48f257597b702839729159bc ""
+  "/home/abhinandan/Desktop/seminar/seminar.tex" 1623448438 58903 58e8782c0e22b7e18f2df8e837a7241f ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -68,8 +68,8 @@
   "s7.png" 1623190139 9794 4e372a5777b6d612517f5eab8fb34e5e ""
   "s8.png" 1623247821 14203 27d22d4b2e5a8b33cdb8a022a53bb9c5 ""
   "s9.png" 1623252596 9800 0f739dfb04079ab6dfdd855a9a8e0916 ""
-  "seminar.aux" 1623446858 5637 baa8eb6c5ec965d785b8aacb56ef80a2 "xelatex"
-  "seminar.tex" 1623446857 58902 1eb7d56a48f257597b702839729159bc ""
+  "seminar.aux" 1623448441 5636 00c6d04b2c5d3569d6b59bc103c1bd57 "xelatex"
+  "seminar.tex" 1623448438 58903 58e8782c0e22b7e18f2df8e837a7241f ""
   (generated)
   "seminar.log"
   "seminar.xdv"
