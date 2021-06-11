@@ -1,9 +1,9 @@
-\documentclass[11pt]{article}
+\documentclass[12pt]{article}
 \usepackage[legalpaper,margin=.6in]{geometry}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{fontspec}
-\setmainfont{Book Antiqua}
+\setmainfont{Amerigo BT}
 \usepackage{float}
 \usepackage{tabto}
 \usepackage{caption}
@@ -13,7 +13,9 @@
 \setlength{\fboxsep}{0em}
 \setlength{\fboxrule}{1pt}
 \begin{document}
+{\setmainfont{Times New Roman}
 \begin{center}
+    
     \topskip0pt
     \vspace*{\fill}
     \textbf{\huge Probabilistic Fracture Simulation}
@@ -24,7 +26,7 @@
     Under the Guidance of
     \textbf{\\~\\\Large PROF. RAJIB CHOWDHURY}\\~\\~\\
     \includegraphics[width=.3\textwidth]{iitr.png}\\~\\~\\
-    {\large STRUCTURAL ENGINEERING GROUP\\~\\
+    {\bf\large STRUCTURAL ENGINEERING GROUP\\~\\
 DEPARTMENT OF CIVIL ENGINEERING\\~\\
 INDIAN INSTITUTE OF TECHNOLOGY ROORKEE\\~\\
 ROORKEE- 247667, UTTARAKHAND, INDIA.\\~\\
@@ -114,7 +116,7 @@ knowledge.\\~\\
 
 \pagebreak
 %------------------------------------------------------------------
-
+}
 \rule{\textwidth}{.1em}
 \begin{center}
 \textbf{Abstract}
@@ -155,13 +157,14 @@ widely used to study non-linear fracture mechanics.
 \subsection{Defining Fracture}Figure shows a cracked sample and its load P vs load point displacement, 6. The “crack” suddenly starts to propagate internally at A. The increased crack length increases the compliance of the specimen and causes the sudden load drop from A to A'. As the load increases, the crack continues its internal growth. At B, the crack front at the specimen surface starts to move forward, and the crack continues to grow in a “stable” manner to the maximum load C. D is the point of final separation, fracture mechanics studies the fracture initiation at A and the stable crack growth from A' to B and onwards. Often the point of fracture initiation is not so clearly defined as shown in the figure. In this case, certain degree of arbitrariness has to be introduced in order to define fracture initiation. Fracture can be defined in terms of the above described macro-features or in terms of the micro-structural features such as fracture of brittle inclusions,etc.
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=.8\textwidth]{s1.png}}
+    \fbox{\includegraphics[width=.5\textwidth]{s1.png}}
     \captionsetup{labelformat=empty}
     \caption{load-elongation curve for fracture initiation and stable crack growth}  
 \end{figure}
 \subsection{Elastic Stress Field}Linear elastic fracture mechanics (LEFM) is based on the elastic solution of the crack tip stress field. Williams has shown that in a cracked plate 
 $\sigma_{ij}$, $\epsilon_{ij}$ and $u_i$ can be expressed in terms of:
-\begin{align*} 
+
+\begin{align*}
     \sigma_{ij}(r, \theta) &= \frac{k_1}{\sqrt{2 \pi r}} \bar{\sigma}_{ij(1)}(\theta) + k_2 \bar{\sigma}_{ij(2)}(\theta) + k_3 \sqrt{(2 \pi r)}\bar{\sigma}_{ij(3)}(\theta) + ...
     \\\epsilon_{ij}(r, \theta) &= \frac{k_1}{\sqrt{2 \pi r}} \bar{\epsilon}_{ij(1)}(\theta) + ... \tag{1} \label{1}
     \\u_{ij}(r, \theta) &= \frac{k_1 \sqrt{(2 r)}}{\pi} \bar{u}_{i(1)}(\theta) + ...
@@ -199,6 +202,15 @@ the crack within $\Delta a$ is:
 \begin{align*}
     \Delta W = \int_{0}^{\Delta a} \sigma_{yy}(r', 0)u_y(r, \pi)dr = \frac{(1 - \nu ^ 2)}{E} K_{I}^2 \Delta a \tag{3} \label{3}
 \end{align*}
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=.4\textwidth]{s3.png}}
+    \captionsetup{labelformat=empty}
+    \caption{word done to close the crack increment $\Delta a$}
+    
+\end{figure}
+
+
 for the plane strain case. This is also the amount of strain energy released as the crack moves forward
 under the fixed grip condition. It can be considered as the strain energy flux which flows toward the
 crack tip during fracturing.
@@ -208,13 +220,7 @@ crack tip during fracturing.
 \end{align*}
 where $\bar E = E/(1 - \nu^2)$ for plain strain case and $\bar{E} = E$ for plane stress.
 
-\begin{figure}[H]
-    \centering
-    \fbox{\includegraphics[width=.5\textwidth]{s3.png}}
-    \captionsetup{labelformat=empty}
-    \caption{word done to close the crack increment $\Delta a$}
-    
-\end{figure}
+
 
 
 
@@ -557,7 +563,7 @@ modified to account for the singular nature of the near crack fields.
 \begin{center}
     \begin{tabular}{ l l l } 
      \hline
-    Method             & Strengths &weaknesses\\\\ \hline
+    \\Method             & Strengths &weaknesses\\\\ \hline
     \\Finite differece   & $\begin{array}{@{}l@{}} \text{Easy to employ}\\\text{Error estimates available} \end{array}$& $\begin{array}{@{}l@{}} \text{Slow convergence}\\\text{Uniform mesh requirement} \\\text{Cannot model singularities}\end{array}$ \\\\\hline
     \\Finite elements    & $\begin{array}{@{}l@{}} \text{Good convergence}\\\text{Singularities can be modeled} \end{array}$ &  $\begin{array}{@{}l@{}} \text{Modeling is difficult}\\\text{Few existing error estimators} \end{array}$ \\\\\hline
     \\Boundary element   & $\begin{array}{@{}l@{}} \text{Modeling is easier}\\\text{Error estimation is easy} \end{array}$ &$\begin{array}{@{}l@{}} \text{computationally more expensive }\\\text{Converges slowly for singular problems} \end{array}$\\\\\hline
@@ -663,19 +669,19 @@ simulation involves the problems of interacting cracks. Consider the problem of 
 sheet which are opened by wedge loads. The cracks at two sides of the sheet are slightly
 misaligned to provide initial asymmetry. Figure shows the cracks at three stages of the analysis.
 Initially, the cracks repel each other and, as propagation continues, they attract. At the final stage,
-the two cracks intersect. Figure 5 shows the stress intensity factor histories as a function of crack
+the two cracks intersect. Figure shows the stress intensity factor histories as a function of crack
 length. The positive mode II component is evident during the avoidance stage and negative mode
 II is evident during attraction.
 
 
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=\textwidth]{s11.png}}
+    \fbox{\includegraphics[width=.9\textwidth]{s11.png}}
     \captionsetup{labelformat=empty}
     \caption{Displacement plots during crack propagation}  
 \end{figure}
 
-\subsubsection{Adaptive Finite Element Analysis}
+\subsection{Adaptive Finite Element Analysis}
 One of the biggest problems with finite element analysis (FEA) lies in the fact that an
 assessment of the reliability of the FE solution is difficult to obtain. The FE
 analyst is usually guided by experience in designing and assessing the quality of the mesh. After
@@ -694,12 +700,116 @@ p-versions. The h-version improves the accuracy of the solution by refining the 
 p-version uses a fixed mesh but increases the polynomial degree of the shape functions. In the
 present work the projection type error estimators combined with h-version mesh refinement
 algorithms which use quadrilateral elements are investigated for two-dimensional linear elastic
-problems. The mesh refinement algorithms are based on simple [47] and hierarchical [48] schemes
+problems. The mesh refinement algorithms are based on simple and hierarchical schemes
 for subdividing quadrilaterals with transitioning, which avoids the need for constraint equations
 to enforce compatibility at element boundries. Another scheme is based on using constraint
 equations to enforce compatibility between elements. This h-version will not have as high a
 convergence rate as a combined h-p-version (or even a p-version), but the h-version is easier to
 program and the results are easier to interpret,
+
+\section{Probabilistic Fracture Mechanics}
+The interest in applying statistics to assess structural reliability has continued to
+increase. This is evident from the large amount of work in
+probabilistic fracture mechanics (PFM) and associated topics.
+Many factors contribute to reliability and these often change both systematically
+and at random. In the past, structures have been designed using a simple factor of
+safety approach to calculate a safe lifetime over which the applied loads will be
+sustained. Each variable in the equations governing the operation of the system was given a reasonable
+value drawn from past results or even just human intuition, and a predicted life
+obtained. This was then divided by a factor of safety which reduced it to give a 'safe'
+maximum operating life. It is conceivable that this is unrealistically conservative but simple.\\
+So that there is a demand,
+particularly from industry, for a statistical justification behind the calculations,
+since many parameters may influence the behaviour of a structure and in practice
+each will be subject to both random and systematic variations.\\\\
+One approach is to use historical data from past failures and non-failures to
+evaluate the reliability of current productions.\\\\
+Thus, an alternative approach has been sought, namely the development and
+application of engineering models based on an understanding of the failure modes
+and statistical distributions of the controlling parameters. The latter distributions
+are not always known, so that errors may be introduced because of poor
+assumptions.\\\\
+Ideally, a combination of the two methods is necessary so that past experience
+and results plus specially designed laboratory tests can be used to obtain statistical
+distributions which best fit these data, but also, hopefully provide predictions about
+altered or new systems. The problem is then divided:\\\\
+{\it 1. The basic problem:}
+The two main considerations are the distribution of crack-like defects (or flaws)
+introduced during the fabrication of a structure and the critical crack length
+distribution for the material under service conditions, the latter being controlled
+primarily by the fracture toughness.In general, there is a lack of data for
+the initial distribution of defects in a structure so the distribution is often assumed to
+be lognormal or exponential. From a failure point of view, it is importanl to know
+how this distribution compares with that of the critical crack size, which is
+controlled by the material properties, and applied loading. The probability of
+failure is then given by the probability of interaction of the actual crack or flaw $a_i$,
+and a critical crack length $a_{c}$\\\\
+In the above, there has been an inherent assumption of independence between ai
+and ac. Marriott and Churchill pose a warning that the presence of defects in
+regions of low toughness material may potentially increase the failure probability by
+several orders of magnitude. A preliminary examination of service failures suggests
+the possibility of a correlation effect may indeed be a real one, not to be ignored.\\\\
+{\it 2. Further considerations: }Closely linked with the as-fabricated flaw size distribution is the role played by
+non-destructive testing in detecting defects which may, or may not, be repaired.
+Thus, if the initial flaw distribution and the probability of detecting a defect are
+known, then the distribution of flaws when the structure is put into service can be
+deduced.\\\\
+In situations where fatigue cracking occurs, the defect distribution will tend to
+alter with the number of applied cycles.This
+problem may be reduced by in-service inspection at fixed intervals of time, and by
+repairing the defects so found.
+\subsection{General}
+The concept of design factors can be pursued in the probabilistic models where the
+factors themselves are defined in terms of the ratio of characteristic values of load
+and strength based on statistical models of the variables instead of the mean values.
+For example, the characteristic value for load may be the 90 percentile value of the
+load distribution and for strength the 5 percentile value of the strength distribution.
+(Here, '90 percentile value' indicates the value below which a load is expected to fall
+with 90\% confidence.) The optimisation of the inherent cost may also be included.
+Alternatively, the uncertainties of the different loads may be combined statistically, 
+since only one safety factor should be sufficient since there is just one design
+condition, namely the specified reliability level.\\\\
+Other approaches include fault tree analysis which is essentially a deterministic
+approach whereby each event in a sequence is assigned a probability of success/
+failure. Fukuda considers this as a link between probabilistic and qualitative
+methods and explains its use with respect to improving the reliability of welded
+structures. However, no distribution functions are assumed and so there can be no
+real consideration of the uncertainties involved. The component probabilities are
+assumed known, though they may be ill-defined.\\\\
+In the probabilistic treatment, the random variations are described using
+distributions of values for the parameters rather than one deterministic value. The
+distribution may be thought of as a curve combining the possible values and the
+likelihood (probability) they will occur. The introduction of distributions of values
+necessarily complicates an analysis, but the end result is likely to be more accurate
+and hence of more use. In some cases, neat analytical expressions for the reliability
+are impossible and numerical approximations are required. 
+Approximate interactive algebraic procedures are used to determine an estimate of
+the failure probability ( = 1 - reliability), whereas in the latter, the approximation is
+at a later stage, after all the exact probabilistic expressions have been obtained for
+the complete system; this ibe justified by the improvement gained.s, of course, much harder, and the work involved may not be justified by the improvement gained.
+
+\subsection{Flaw Distribution}
+Perhaps the greatest problem in assessing the reliability of a welded structure is that
+of data on defects which may be present. Ideally, there should be no defects, but in
+practice no structure is completely defect free, since no-one is perfect and the result
+can only be as accurate as the tools available permit, including the experience (or
+lack of experience) of human operators involved.\\\\
+In terms of fracture mechanics it is the crack depth that is of
+importance. Fearnehough and Jones present such data for seamless and seam
+welded pipe, estimated from preservice pressure test failures. In recent years pipe
+supplies have been remarkably improved in quality, so alternative information has
+been obtained by sectioning and measuring all detected defects in a sample of nearly
+3000 seamless pipes. The data are similar to those from the failure analysis, but still
+do not represent the true defect population of an existing pipeline since some defects
+may have been missed in the inspection and the pressure test will eliminate large
+unacceptable defects and some smaller insignificant ones.\\\\
+
+
+
+
+
+
+
 
 
 \end{document}  
