@@ -471,7 +471,7 @@ $K$ and $J$ are macro-parameters. As long as they can characterize the stresses 
 location of fracture initiation and fracture propagation, they can be used to measure fracture toughness
 regardless of the details of the initiation and propagation processes. Clearly, we use $K$ and $J$ as indirect
 parameters which do not infer any specific fracture process.
-%\\\\\rule{\textwidth}{.1em}
+\\\\\rule{\textwidth}{.1em}
 
 
 
@@ -706,7 +706,7 @@ to enforce compatibility at element boundries. Another scheme is based on using 
 equations to enforce compatibility between elements. This h-version will not have as high a
 convergence rate as a combined h-p-version (or even a p-version), but the h-version is easier to
 program and the results are easier to interpret,
-
+\\\\\rule{\textwidth}{.1em}
 \section{Probabilistic Fracture Mechanics}
 The interest in applying statistics to assess structural reliability has continued to
 increase. This is evident from the large amount of work in
@@ -787,6 +787,54 @@ Approximate interactive algebraic procedures are used to determine an estimate o
 the failure probability ( = 1 - reliability), whereas in the latter, the approximation is
 at a later stage, after all the exact probabilistic expressions have been obtained for
 the complete system; this ibe justified by the improvement gained.s, of course, much harder, and the work involved may not be justified by the improvement gained.
+\subsection{Statistical Basis Of PFM}
+The basis of PFM is the simple axiom that a given
+mode of failure event E will occur when the stress $\sigma_w$
+associated with the failure mode exceeds the mode
+governing strength $\sigma_f$. The probability of failure mode
+$E$ is given by
+\begin{align*}
+    \text{P}(E) = \text{P}(Y < 0) = \text{PD}(y=0)\\~\\
+    \text{where the strength margin, }
+    Y = \sigma_f - \sigma_w = G(x_i)
+\end{align*}
+with $i = 1 ..... n_x$, depends on input variables that at affect component stress or strength or both. An alterna-
+tive definition in terms of a strength ratio $Y = \sigma_f/\sigma_w$
+is equally valid and leads to P($E$) = P(($Y$)< 1)
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=.6\textwidth]{s13.png}}
+    \captionsetup{labelformat=empty}
+    \caption{Fig.(a)Contrast between deterministic and probabilistic engineering analysis.}  
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=.6\textwidth]{s14.png}}
+    \captionsetup{labelformat=empty}
+    \caption{Fig.(b)Statistical variation of strength ($\sigma_f$) and applied stress ($\sigma$); failure possible over crosshatched region.}  
+\end{figure}
+
+Here, $G$
+is a concise deterministic summary of all prior engineering experience, models, and assumptions. If the
+engineering analysis does not lead to an obvious functional 
+form, $G$ may be obtained from standard least-
+squares fitting of the engineering data or by the repetitive
+ analysis procedure.the $x_i$ are most realistically described as ran
+dom variables $X_i$ rather than single assigned deterministic values. 
+As shown in fig.(a), statistical interpretation 
+of the $X_i$ results in the interpretation of
+strength margin as a random variable. The statistical
+interpretation also allows the analyst to quantify his
+uncertainty of the engineering model $G$ based on
+judgement, and his previous record of predictive suc-
+cess and failure. This error quantification is done by
+introducing one or more additional $X_i$ to serve as
+'error terms'.
+The cumulative distribution functions of the $X_i$,
+represented by\\\\
+\begin{center}
+    PD($x_i$) = P($X_i \le x_i$)
+\end{center}
 
 \subsection{Flaw Distribution}
 Perhaps the greatest problem in assessing the reliability of a welded structure is that
@@ -803,13 +851,73 @@ been obtained by sectioning and measuring all detected defects in a sample of ne
 do not represent the true defect population of an existing pipeline since some defects
 may have been missed in the inspection and the pressure test will eliminate large
 unacceptable defects and some smaller insignificant ones.\\\\
+A way of helping to solve the problem of missing defects is described by Jagger
+and Manning. The largest defect in each weld is recorded and an extreme value
+distribution used to model these data. From this, predictions may be made
+regarding the behaviour of the largest defects, which are expected to be most
+damaging. Weld defects found in high Temperature steam pipe welds by non-
+destructive testing (NDT) techniques are analysed in terms of the defect length and
+depth through the wall thickness to obtain the appropriate distributions.
+\subsection{Non-Destructive Testing(NDT)}
+After fabrication, a structure is usually inspected to check for large 'unacceptable'
+flaws which require repair before service. This inevitably changes the initial defect
+distribution by filtering some of the larger defects. A general appreciation of NDT is
+given by Hansen including some of the difficulties encountered. No technique of
+non-destructive inspection is perfect, so that a probability of detection is associated
+with each, and this may well vary according to the defects of interest. In terms of
+fracture mechanics analysis the defect depth is essential, so that an estimate of the
+accuracy of sizing capabilities must be determined.
+Packman investigated penetrant systems of aluminium and titanium,
+which yield greater than 90\% ability to detect surface cracks of length greater than
+0.939 mm. The probability of detection decreases for small cracks and also varies in
+accuracy depending on the inspectors' capabilities. Although two may find the same
+total number of defects (i.e. the same detection probability) one may have a higher
+percentage of false indications.
+So, defect detection probability, DDP, is used:
+\begin{align}
+    \text{DDP}=\frac{\text{Number of teams successfully detecting a particular defect}}{\text{Total number of teams}}
+\end{align}
+\subsection{Material Properties}
+Swindeman claims that he has found that variability
+in material properties can be traced to differences in chemistry, fabrication and
+testing procedures. These correlate well with heat-to-heat, product-to-product and
+laboratory-to-laboratory variability, respectively.\\\\
+In structures where target failure probabilities are low, it is the extremes of the
+distributions that are of interest, including the possibility of inconceivable events
+producing 'outliers' to the distribution.
+
+\subsection{Fatigue}
+Failure by fatigue is a common occurrence in welded joints. Small cracks at weld
+toes (or the root) may propagate under cyclic loading.It is usually assumed that the stress range versus endurance (S-N) curve is a
+straight line with two parallel lines. For a particular stress level, S, it is the
+scatter in fatigue life, N, that is of interest. Therefore, a probability density function
+for N is required.
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=.6\textwidth]{s12.png}}
+    \captionsetup{labelformat=empty}
+    \caption{General S-N curve}  
+\end{figure}
+\subsection{Mathematical Techniques}
+
+The problem of obtaining sufficient data, upon which statistical predictions for a
+component may be based, is a real one. Where previous information is available,
+estimates of sample size may be made using the (previous) sample standard
+deviation. However, more often, there are no data readily
+available. Either a guess must be made for the expected variance of the results or
+sequential testing may be utilised. Smith explains how the method is based on the
+desired and minimum acceptable reliabilities and the risk involved. After each test,
+the number of failures and successes is reviewed and a decision made to accept or
+reject the component or to continue sampling. In general, even when the sample size
+can be estimated, fewer tests are required using sequential testing.
+An approximation to the amount of confidence which can be placed in the
+minimum of a small sample of results is given by Wilks. The equation:
+\begin{align*}
+    \beta^n = 1 - \alpha
+\end{align*}
 
 
-
-
-
-
-
-
+predicts the percentage, fl, of data (from the population) which would be expected to
+lie above the minimum of n sample results with a confidence of $\alpha$
 
 \end{document}  
