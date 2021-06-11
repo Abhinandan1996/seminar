@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.7)  11 JUN 2021 21:31
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.7)  11 JUN 2021 23:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -337,63 +337,87 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--53
  []
 
 
-LaTeX Font Warning: Font shape `TU/BookAntiqua(0)/m/sc' undefined
-(Font)              using `TU/BookAntiqua(0)/m/n' instead on input line 56.
+Underfull \hbox (badness 10000) in paragraph at lines 54--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--83
+
+ []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 78--83
+File: iitr.png Graphic file (type bmp)
+<iitr.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--83
+Underfull \hbox (badness 10000) in paragraph at lines 92--102
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 122--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--83
+Underfull \hbox (badness 10000) in paragraph at lines 122--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--83
+Underfull \hbox (badness 10000) in paragraph at lines 122--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--111
+Underfull \hbox (badness 10000) in paragraph at lines 122--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--155
 
  []
 
 File: s1.png Graphic file (type bmp)
 <s1.png>
-[3]
+[4]
 File: s2.png Graphic file (type bmp)
 <s2.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--155
+Underfull \hbox (badness 10000) in paragraph at lines 188--199
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--162
+Underfull \hbox (badness 10000) in paragraph at lines 201--206
 
  []
 
 File: s3.png Graphic file (type bmp)
 <s3.png>
-[4]
+[5]
 File: s4.png Graphic file (type bmp)
 <s4.png>
 File: s5.png Graphic file (type bmp)
 <s5.png>
- [5]
-Underfull \hbox (badness 10000) in paragraph at lines 254--269
+ [6]
+Underfull \hbox (badness 10000) in paragraph at lines 298--313
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--280
+Underfull \hbox (badness 10000) in paragraph at lines 315--324
 
  []
 
@@ -402,92 +426,88 @@ File: s6.png Graphic file (type bmp)
 File: s7.png Graphic file (type bmp)
 <s7.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--311
+Underfull \hbox (badness 10000) in paragraph at lines 340--355
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--311
+Underfull \hbox (badness 10000) in paragraph at lines 340--355
 
  []
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 344--360
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 388--404
 
  []
 
 File: s8.png Graphic file (type bmp)
 <s8.png>
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 369--376
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 413--420
 
  []
 
 File: s9.png Graphic file (type bmp)
 <s9.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 407--425
-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 443--478
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 443--478
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 482--499
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 482--499
+Underfull \hbox (badness 10000) in paragraph at lines 451--469
 
  []
 
 [9]
-File: s10.png Graphic file (type bmp)
-<s10.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 527--551
+Underfull \hbox (badness 10000) in paragraph at lines 487--522
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 527--551
+Underfull \hbox (badness 10000) in paragraph at lines 487--522
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--543
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--543
 
  []
 
 [10]
-File: s11.png Graphic file (type bmp)
-<s11.png>
+File: s10.png Graphic file (type bmp)
+<s10.png>
 
-Overfull \hbox (2.0pt too wide) in paragraph at lines 629--631
- [][] 
+Underfull \hbox (badness 10000) in paragraph at lines 571--595
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 571--595
+
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 635--659
+File: s11.png Graphic file (type bmp)
+<s11.png>
+
+Overfull \hbox (2.0pt too wide) in paragraph at lines 673--675
+ [][] 
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 679--703
 
  []
 
-[12] (./seminar.aux)
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
- ) 
+[13] (./seminar.aux) ) 
 Here is how much of TeX's memory you used:
- 6001 strings out of 481804
- 145330 string characters out of 5937877
+ 5998 strings out of 481804
+ 145270 string characters out of 5937877
  457410 words of memory out of 5000000
- 22928 multiletter control sequences out of 15000+600000
+ 22925 multiletter control sequences out of 15000+600000
  538242 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  43i,15n,67p,1064b,303s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on seminar.xdv (12 pages, 342184 bytes).
+Output written on seminar.xdv (13 pages, 353776 bytes).
