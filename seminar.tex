@@ -944,7 +944,7 @@ remeshing the boundary. Therefore, the repetitive deterministic analysis is made
 compared to most other numerical methods. Thus, it becomes feasible to use the brute force MCS method for the reliability
 analysis of a cracked structure.
 \subsection{Scaled Boundary Finite Element Method(SBFEM) For Shape Sensitivity Analysis}
-A 2D homogeneous domain containing a crack tip is illustrated in Figure. The geometry of the domain satisfies the scaling
+\subsubsection{Summary of the scaled boundary finite element method for fracture analysis:\\}A 2D homogeneous domain containing a crack tip is illustrated in Figure. The geometry of the domain satisfies the scaling
 requirement, i.e., the whole boundary of the domain is directly visible from the crack tip. Problems of more complex 
 geometry can be divided into such smaller subdomains.
 The scaling center O is selected at the crack tip.
@@ -1038,11 +1038,79 @@ where $[D]$ is the elasticity matrix. where $[B^1(\eta)]$ and $[B^2(\eta)]$ desc
     \end{bmatrix}
     [N_{,\eta}(\eta)]
 \end{align*}
-The displacement functions {u(n)} are expressed as
+The displacement functions {$u(\xi)$} are expressed as
 \begin{align*}
     u(\xi) = \sum_{ i = 1}^{N-1} [\varPsi_{i}^{u}]\xi^{-[S_i]}\{c_i\} + [\varPsi_{N}^{u}]\{c_N\} \tag{25}
 \end{align*}
 
+
+where $[S_i](i = 1, 2, . . . , N)$ are diagonal blocks of the real Schur matrix, [$\varPsi _{i}^{(u)}$] the corresponding displacement modes and {$c$}
+integration constants, which are determined from the displacements on the boundary {$u(\xi = 1)$}. As in the finite element
+method, stresses are evaluated element-by-element, yielding the values at a specified local coordinate $\eta$ within a given
+element
+\begin{align*}
+    \{\sigma(\xi, \eta)\} = \sum_{i = 1}^{N-1}[\varPsi_{\sigma i}(\eta)]\xi^{-|S_i| - |I|}\{c_i\} \tag{26}
+\end{align*}
+
+where $[\varPsi_{\sigma i}(\eta)]$ represents the stress modes corresponding to the displacement modes [$\varPsi_{i}^{(u)}$]
+\begin{align*}
+    [\varPsi_{\sigma i}(\eta)] = [D](-[B^1(\eta)][\varPsi_{i}^{(u)}][S_i]+[B^2(\eta)][\varPsi_i^{(u)}]) \tag{27}
+\end{align*}
+\\\\
+\subsubsection{Evaluation of stress intensity factors}
+When the real parts of the eigenvalues of a diagonal block [$S_i$] in Eq. (10) are between -1 and 0, the matrix power function
+in Eq. (26) leads to a stress singularity. The diagonal block is denoted as [$S ^{(s)}$ ] (superscript (s) for singular) and
+$-1 < \lambda[S^{(s)}] < 0$ applies. The corresponding displacement modes and integration constants are denoted as [$\varPsi^{(s)}$] and
+$\{C^{(s)}\}$Their contribution to stresses
+vanishes when the limit $\xi \rightarrow 0$ is performed and thus are not needed for the definition of stress intensity factors. The singular
+stress field is expressed as
+\begin{align*}
+    &\{simga^{(s)}(\xi, \eta)\} = [\xi_{\sigma}^{(s)}(\eta)]\xi^{-|S_i| - |I|}\{c^{(s)}\}\\
+    &\text{where,}\\
+    &\xi = \hat{r}/r(\theta)\\
+    &\{\sigma^{(s)}(\hat{r}, \theta)\} = \frac{1}{\sqrt{2\pi L}}(\hat{r}/L)^{-[S^{(s)}(\theta)]}\{K\theta\}
+\end{align*}
+The SIFs are given by
+\begin{align*}
+    \{K(\theta)\} = \sqrt{2 \pi L}[\varPsi_{\sigma L}^{(s)}(\theta)]\{c^{(s)}\}
+\end{align*}
+\subsubsection{Shape sensitivity}
+The location of the crack tip is perturbed by a finite amount $\Delta a$ and $\Delta z$ as shown in Figure below. The scaling center and origin of
+the coordinates are also moved with the crack tip. This corresponds to the new scaling center Õ (the effect of perturbation is
+denoted by accent  and domain coordinate translation by
+
+
+\begin{align*}
+    \tilde{\hat{x}} = \hat{x} + \Delta a\\
+    \tilde{\hat{y}} = \hat{y} + \Delta z
+\end{align*}
+and similarly the nodal coordinate translation by
+
+\begin{align*}
+    \{\tilde{x}\} = \{x\} + \Delta a\\
+    \{\tilde{y}\} = \{y\} + \Delta z
+\end{align*}
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=.5\textwidth]{s17.png}}
+    \captionsetup{labelformat=empty}
+    \caption{Perturbation in scaled boundary coordinates.}  
+\end{figure}
+
+\subsection{Fracture Failure Criteria}
+\subsubsection{Mode-I failure}
+During fracture, the material can be associated with its own characteristic resistance to fracture known as the ’fracture
+toughness’ $K_{Ic} $such that the crack will grow under Mode-I loading when
+\begin{align*}
+    K_I > K_{Ic}
+\end{align*}
+\subsubsection{Mixed-Mode Failure}
+The failure criteria can be simplified, for 2D Mixed-Mode loading, as
+\begin{align*}
+    &K_{eff} > K_{Ic}\\~\\
+    &\text{where,}\\
+    &K_{eff} = \cos\frac{\theta_c}{2}\left(K_1 \cos^2\frac{\theta_c}{2}- \frac{3}{2}K_{II}\sin\theta_c\right)
+\end{align*}
 
 
 

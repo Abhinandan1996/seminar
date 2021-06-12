@@ -1,11 +1,11 @@
 # Fdb version 3
-["xdvipdfmx"] 1623528189 "seminar.xdv" "seminar.pdf" "seminar" 1623534594
-  "seminar.xdv" 1623528189 534156 cc228db558d70683190fd2a0a44bac5a "xelatex"
+["xdvipdfmx"] 1623538358 "seminar.xdv" "seminar.pdf" "seminar" 1623538380
+  "seminar.xdv" 1623538358 555392 130dfd83c22643c76e812de4af252ef0 "xelatex"
   (generated)
   "seminar.pdf"
-["xelatex"] 1623528188 "/home/abhinandan/Desktop/seminar/seminar.tex" "seminar.xdv" "seminar" 1623534594
+["xelatex"] 1623538354 "/home/abhinandan/Desktop/seminar/seminar.tex" "seminar.xdv" "seminar" 1623538380
   "/etc/texmf/web2c/texmf.cnf" 1623063391 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/abhinandan/Desktop/seminar/seminar.tex" 1623534592 65945 0cae9def4fa2880b95a8f57e910c7ffb ""
+  "/home/abhinandan/Desktop/seminar/seminar.tex" 1623538379 69371 c1aebaf61403598327335203197c7089 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -62,6 +62,7 @@
   "s14.png" 1623446126 21021 7a1a0a17a4455952227896abe571230a ""
   "s15.png" 1623521587 23132 5b7df5c9cca66599b0e6f32ac223d396 ""
   "s16.png" 1623526353 36542 3f937f72797ed7565fa3fd9c25fbdb37 ""
+  "s17.png" 1623537932 18727 76f44ca31168d623dd206179ba84180d ""
   "s2.png" 1623107141 4919 8efa9448ac9703630029947f6cf362b6 ""
   "s3.png" 1623153831 7586 7ae5132e61176b253b32ee4804716117 ""
   "s4.png" 1623176492 11768 6af47ee538177f917b446f42eab9d942 ""
@@ -70,8 +71,8 @@
   "s7.png" 1623190139 9794 4e372a5777b6d612517f5eab8fb34e5e ""
   "s8.png" 1623247821 14203 27d22d4b2e5a8b33cdb8a022a53bb9c5 ""
   "s9.png" 1623252596 9800 0f739dfb04079ab6dfdd855a9a8e0916 ""
-  "seminar.aux" 1623528189 6413 4972ba025f7482f4f9093947515fb979 "xelatex"
-  "seminar.tex" 1623534592 65945 0cae9def4fa2880b95a8f57e910c7ffb ""
+  "seminar.aux" 1623538358 7333 0705b8fc2922c9b75de8e5f8d6ed2dd2 "xelatex"
+  "seminar.tex" 1623538379 69371 c1aebaf61403598327335203197c7089 ""
   (generated)
   "seminar.xdv"
   "seminar.log"
