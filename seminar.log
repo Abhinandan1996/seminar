@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.7)  12 JUN 2021 03:24
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.7)  13 JUN 2021 01:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -584,17 +584,17 @@ File: s13.png Graphic file (type bmp)
 <s13.png>
 File: s14.png Graphic file (type bmp)
 <s14.png>
- [15]
-Underfull \hbox (badness 10000) in paragraph at lines 817--835
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 817--835
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 817--835
+
+ []
+
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 840--861
 
  []
@@ -604,21 +604,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 840--861
 
  []
 
-[16]
+
 Underfull \hbox (badness 10000) in paragraph at lines 881--888
 
  []
 
 File: s12.png Graphic file (type bmp)
 <s12.png>
-[17] (./seminar.aux) ) 
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 925--946
+
+ []
+
+[17]
+File: s15.png Graphic file (type bmp)
+<s15.png>
+File: s16.png Graphic file (type bmp)
+<s16.png>
+ [18] [19] (./seminar.aux) ) 
 Here is how much of TeX's memory you used:
- 6064 strings out of 481804
- 147422 string characters out of 5937877
+ 6080 strings out of 481804
+ 147546 string characters out of 5937877
  457380 words of memory out of 5000000
- 22967 multiletter control sequences out of 15000+600000
+ 22981 multiletter control sequences out of 15000+600000
  538351 words of font info for 85 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  43i,15n,79p,1061b,303s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on seminar.xdv (17 pages, 479604 bytes).
+Output written on seminar.xdv (19 pages, 534156 bytes).

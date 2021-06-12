@@ -482,7 +482,7 @@ This topic focuses on the impact of computational methodology on furthering the 
 mechanics problems, e.g. finite element (FE) methods, finite difference methods and boundary element
 methods, are reviewed. The application of FE methods to the problems of linear elastic fracture problems
 is discussed. A special focus is placed on stable crack growth problems. The need for further research in this
-area is emphasized. The importance of large strain phenomena and accurate modeling of non-linearities
+area is emphasized. The importance of large strain phenomena and accurate modelling of non-linearities
 is highlighted. An expanded version of fracture mechanics methodology is given by Liebowitz \textit{[Advances  in Fracture Research 3. Pergamon Press, Oxford (1989)]}; additional treatment is given in this paper to
 numerical results incorporating error estimates and algorithms for mesh design into the FE code. The
 adaptive method involves various stages which includes FE analysis, error estimation/indication, mesh
@@ -564,7 +564,7 @@ modified to account for the singular nature of the near crack fields.
     \begin{tabular}{ l l l } 
      \hline
     \\Method             & Strengths &weaknesses\\\\ \hline
-    \\Finite differece   & $\begin{array}{@{}l@{}} \text{Easy to employ}\\\text{Error estimates available} \end{array}$& $\begin{array}{@{}l@{}} \text{Slow convergence}\\\text{Uniform mesh requirement} \\\text{Cannot model singularities}\end{array}$ \\\\\hline
+    \\Finite difference   & $\begin{array}{@{}l@{}} \text{Easy to employ}\\\text{Error estimates available} \end{array}$& $\begin{array}{@{}l@{}} \text{Slow convergence}\\\text{Uniform mesh requirement} \\\text{Cannot model singularities}\end{array}$ \\\\\hline
     \\Finite elements    & $\begin{array}{@{}l@{}} \text{Good convergence}\\\text{Singularities can be modeled} \end{array}$ &  $\begin{array}{@{}l@{}} \text{Modeling is difficult}\\\text{Few existing error estimators} \end{array}$ \\\\\hline
     \\Boundary element   & $\begin{array}{@{}l@{}} \text{Modeling is easier}\\\text{Error estimation is easy} \end{array}$ &$\begin{array}{@{}l@{}} \text{computationally more expensive }\\\text{Converges slowly for singular problems} \end{array}$\\\\\hline
     \\Hybrid approaches  & $\begin{array}{@{}l@{}} \text{Good for specific problems}\\\text{Generally very accurate} \end{array}$& $\begin{array}{@{}l@{}} \text{Usually developed for restricted problem class}\\\text{difficult to implement} \end{array}$\\ 
@@ -809,7 +809,7 @@ is equally valid and leads to P($E$) = P(($Y$)< 1)
 \end{figure}
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=.6\textwidth]{s14.png}}
+    \fbox{\includegraphics[width=.4\textwidth]{s14.png}}
     \captionsetup{labelformat=empty}
     \caption{Fig.(b)Statistical variation of strength ($\sigma_f$) and applied stress ($\sigma$); failure possible over crosshatched region.}  
 \end{figure}
@@ -919,5 +919,131 @@ minimum of a small sample of results is given by Wilks. The equation:
 
 predicts the percentage, fl, of data (from the population) which would be expected to
 lie above the minimum of n sample results with a confidence of $\alpha$
+\\\rule{\textwidth}{.1em}
+\section{Probabilistic fracture mechanics by using Monte Carlo simulation
+and the scaled boundary finite element method}
+In PFM, the sensitivity of the stress intensity stresses are more often than not required to predict the 
+reliability or probability of fracture initiation. 
+Early works in this area include that of which examines probabilistic analysis techniques to estimate the reliability
+ of various response variables, such as the SIF, on the basis of its sensitivity to randomness or uncertainty in the
+input variables. Commonly used techniques include the Monte Carlo simulation (MCS) method and the first-order reliability
+method (FORM). For both methods, uncertainties in the applied load, material properties, and crack geometry are modeled
+as random variables described by specific probability distribution functions. In the MCS methodology, these random
+variables are generated many times from its distribution function. For each of the Monte Carlo samples, the SIFs, which
+are sensitive to the randomness of the variables, are computed. The resulting SIFs are compared with the material toughness
+to evaluate whether failure will occur. Certainly, many deterministic evaluations need to be performed for the MCS method.
+The method can also be combined with other techniques of fracture modeling such as cohesive elements [58,50] to perform a
+reliability analysis. On the other hand, the FORM method requires the mathematical derivative of the SIFs. Evaluation is
+based on solving an algorithm, such as the Hasofer and Lind algorithm, to linearly approximate the most probable point
+of failure. Subsequent studies that exercise these procedures. In all of these
+studies, the sensitivity of the SIF with regards to uncertainties in the applied loads and material properties are shown to be
+dealt with easily.\\\\the scaled boundary finite-element method is employed to investigate the shape sensitivity of the stress
+intensity factors of a crack to the size and orientation of the crack. Only a single boundary mesh is required. The variation
+of the crack size and orientation can be represented by simply changing the position of the crack tip without the need for
+remeshing the boundary. Therefore, the repetitive deterministic analysis is made simple, elegant, and highly efficient as
+compared to most other numerical methods. Thus, it becomes feasible to use the brute force MCS method for the reliability
+analysis of a cracked structure.
+\subsection{Scaled Boundary Finite Element Method(SBFEM) For Shape Sensitivity Analysis}
+A 2D homogeneous domain containing a crack tip is illustrated in Figure. The geometry of the domain satisfies the scaling
+requirement, i.e., the whole boundary of the domain is directly visible from the crack tip. Problems of more complex 
+geometry can be divided into such smaller subdomains.
+The scaling center O is selected at the crack tip.
+Without loss of generality, the origin of the Cartesian coordinates $\hat{x}$ and $\hat{y}$
+is defined at the scaling center. The boundary is discretized with line elements. The nodal coordinates at the boundary
+are denoted \{$x$\} and \{$y$\},
+with shape functions [$N( \eta )$] in the local coordinate $\eta$ . Thus for any point on the boundary the Cartesian 
+coordinates ($x, y$), can be interpolated by 
+\begin{align*}
+    x = [N(\eta)]\{x\}\\
+    y = [N(\eta)]\{y\} \tag{21} \label{21}
+\end{align*}
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=.4\textwidth]{s15.png}}
+    \captionsetup{labelformat=empty}
+    \caption{2D cracked plate in scaled boundary coordinate}  
+\end{figure}
+
+The domain is generated by scaling the boundary along the radial coordinate $\xi$ 
+pointing from the scaling center O to a point
+on the boundary. In other words all such boundary line element segments
+$S^e$ are scaled to the scaling cneter O to form such and area $V^e$. By using eq. (21), the coordinates of any point within the domain $(\hat{x}, \hat{y})$
+can then expressed as:
+\begin{align*}
+    \hat{x} = \xi x = \xi [N(\eta)]\{x\};\\
+    \hat{y} = \xi y = \xi [N(\eta)]\{y\}; \tag{22} \label{22}
+\end{align*}
+
+where the scaling factor $\xi$ takes the value of 0 at the scaling center and 1 on the boundary. $\xi$ and $\eta$ are called the scaled
+boundary coordinates. To reiterate, the coordinates of a point in the domain are denoted as $\hat{x}$ and $\hat{y}$ while $x$ and $y$ are researved
+for the boundary. Note that the two crack faces OA and OB are formed by scaling Points A and B, and thus are not
+discretized, a distinguishing attribute of the SBFEM for fracture applications.
+The Jacobian of the coordinate transformation  is expressed on the boundary ($\xi = 1$) as
+\begin{align*}
+    [J(\eta)] = \begin{bmatrix}
+        x & y\\
+        x.\eta & y.\eta 
+    \end{bmatrix}
+\end{align*}
+
+To avoid the Jacobian of the
+scaled boundary coordinate transformation approaching zero, the acute angle formed by a radial line and the boundary should not be too small.
+As shown in Figure below for a single 2-node element, nodal displacement functions {$u(\xi)$} are introduced along the radial lines
+passing through the scaling center O and a node on the boundary. Along the circumferential direction $\eta$ , the displacements is
+obtained by interpolating the nodal displacement functions
+
+\begin{align*}
+    \{u(\xi, \eta)\} = [N(\eta)]{u(\xi)}
+\end{align*}
+
+
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=.4\textwidth]{s16.png}}
+    \captionsetup{labelformat=empty}
+    \caption{Displacement in scaled boundary coordinates}  
+\end{figure}
+
+Applying a weighted residual technique in the $\eta$ direction leads to the following scaled boundary finite element equation in displacement
+\begin{align*}
+    [E^O]\xi^2\{u(\xi))_{,\xi\xi} + ([C^0] - [E^1] + [E^1]^T)\xi\{u(\xi)\}_{, \xi} - [E^2]\{u(\xi)\} = 0 \tag{23} \label{23}
+\end{align*}
+
+The global coefficient matrices $[E^0], [E^1 ] $and $[E^2 ]$ are obtained by assembling the element coefficient matrices over the 
+complete boundary in the same manner as for the stiffness matrices in the finite element method. The element coefficient 
+matrices are given by
+\begin{align*}
+    [E^0] = [B^1(\eta)]^T[D][B^1(\eta)]|J(\eta)|d\eta;\\
+    [E^1] = [B^2(\eta)]^T[D][B^1(\eta)]|J(\eta)|d\eta; \tag{24} \label{24}\\
+    [E^2] = [B^2(\eta)]^T[D][B^2(\eta)]|J(\eta)|d\eta; 
+\end{align*}
+
+
+where $[D]$ is the elasticity matrix. where $[B^1(\eta)]$ and $[B^2(\eta)]$ describe the strain-displacement relationship with
+
+\begin{align*}
+    [B^1] = \frac{1}{|J|} \begin{bmatrix}
+        y,\eta & 0\\
+        0 &-x,\eta\\    
+        -x,\eta & y,\eta
+    \end{bmatrix}
+    [N(\eta)]
+\end{align*}
+
+\begin{align*}
+    [B^2] = \frac{1}{|J|} \begin{bmatrix}
+        -y & 0\\
+        0 &x\\    
+        x & -y
+    \end{bmatrix}
+    [N_{,\eta}(\eta)]
+\end{align*}
+The displacement functions {u(n)} are expressed as
+\begin{align*}
+    u(\xi) = \sum_{ i = 1}^{N-1} [\varPsi_{i}^{u}]\xi^{-[S_i]}\{c_i\} + [\varPsi_{N}^{u}]\{c_N\} \tag{25}
+\end{align*}
+
+
+
 
 \end{document}  
