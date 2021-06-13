@@ -16,6 +16,8 @@
     linkcolor=black,
     urlcolor=black
 }
+\newcommand\myeq{\mathrel{\stackrel{\makebox[0pt]{\mbox{\normalfont\tiny def}}}{=}}}
+
 \setlength{\parindent}{0em}
 \setlength{\fboxsep}{0em}
 \setlength{\fboxrule}{1pt}
@@ -132,11 +134,9 @@ knowledge.\\~\\
 \begin{center}
 \textbf{Abstract}
 \end{center}
-    This seminar topic focuses on-
-    \\\\(1)The Fundamentals of the fracture mechanics based on the crack tip stress and strain fields and the non-linear fracture mechanics have been developed. Their applications to the studies of fracture initiation and stable crack growth may differ because of the difference in the basic postulates of various fracture theories.
-    \\\\(2)The impact of computational methodology on furthering the understanding of fundamental fracture phenomena. The current numerical approaches to the solution of fracture mechanics problems.
-    \\\\(3)The methodology for probabilistic fracture mechanics analysis (PFM) of structural components with crack-like imperfections. Details are given for the development and application of both a simple nomographic method and a basic numerical tool for PFM applications.
-    \\\\(4)The evaluation of the J-estimation models and the Monte Carlo simulation
+This seminar topic focuses on the Fundamentals of the fracture mechanics based on the crack tip stress and strain fields and the non-linear fracture mechanics have been developed. Their applications to the studies of fracture initiation and stable crack growth may differ because of the difference in the basic postulates of various fracture theories.
+    the impact of computational methodology on furthering the understanding of fundamental fracture phenomena. The current numerical approaches to the solution of fracture mechanics problems.
+    the methodology for probabilistic fracture mechanics analysis (PFM) of structural components with crack-like imperfections. Details are given for the development and application of both a simple nomographic method and a basic numerical tool for PFM applications.
 
     
 
@@ -955,7 +955,7 @@ remeshing the boundary. Therefore, the repetitive deterministic analysis is made
 compared to most other numerical methods. Thus, it becomes feasible to use the brute force MCS method for the reliability
 analysis of a cracked structure.
 \subsection{Scaled Boundary Finite Element Method(SBFEM) For Shape Sensitivity Analysis}
-\subsubsection{Summary of the scaled boundary finite element method for fracture analysis:\\}A 2D homogeneous domain containing a crack tip is illustrated in Figure. The geometry of the domain satisfies the scaling
+\subsubsection{Summary of the scaled boundary finite element method for fracture analysis}A 2D homogeneous domain containing a crack tip is illustrated in Figure. The geometry of the domain satisfies the scaling
 requirement, i.e., the whole boundary of the domain is directly visible from the crack tip. Problems of more complex 
 geometry can be divided into such smaller subdomains.
 The scaling center O is selected at the crack tip.
@@ -1202,6 +1202,101 @@ same problem, considerably lesser number elements and nodes are required. Indeed
 accurate probabilistic fracture analysis. The present technique can also be extended to study the reliability of structures with
 multi-cracks
 
+
+\rule{\textwidth}{.1em}
+\subsection{Edge-Cracked Plate Under Uniaxial Tension (Mode-I) With Varying Crack Length(Example)}
+The edge-cracked rectangular plate has dimensions 2L and W. The upper and lower ends of the plate are subjected
+to tensile stress r 1 . The crack is horizontal and its length a varies. This is an example of a Mode-I problem.
+
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=.3\textwidth]{s18.png}}
+    \captionsetup{labelformat=empty}
+    \caption{Horizontal edge-cracked plate under uniaxial tension}  
+\end{figure}
+\subsubsection{Shape Sensitivity Analysis}
+Coinciding with $g(X) = K_{Ic} - K$, the dimensions of the plate is chosen as $L/W = 1$ with far-field applied tensile stress $\sigma^\infty$ = 1 unit. The
+elastic material properties are taken as Young’s modulus$ E = 20.7 x 10^6 $units and Poisson’s ratio$\nu$ = 0.3. The normalized
+crack length $a/W$ is varied from 0.1-0.8. For relatively small crack sizes $a/W \le 0.2$ the rectangular plate is divided into 3
+sub-domains (Fig. a) with 14 elements (210 nodes), while for larger crack sizes $0.2 < a/W \le 0.8$ only 1 sub-domain is used
+(Fig. b) with 12 elements (190 nodes).
+
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=.6\textwidth]{s19.png}}
+    \captionsetup{labelformat=empty}
+    \caption{Mesh of horizontal edge-cracked plate: (a) 3 sub-domain mesh; (b) 1 sub-domain mesh.}  
+\end{figure}
+The computed normalized Mode-I stress intensity factor (SIF) $K_1/\sigma\sqrt{\pi a}$ is plotted as a variation of the normalized crack
+length $a/W$ . Note that this is reflective of the Mode-I response matrix [$K_s$ ]. Acceptable convergence is achieved using
+9-node, 11-node, and 15-node elements . The corresponding derivative $\partial K_I/\partial a$ is calculated and plotted. 
+Analytical solutions are also provided for an infinite domain (i.e. $L/
+W = \infty$).
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=.7\textwidth]{s20.png}}
+    \captionsetup{labelformat=empty}
+    \caption{Horizontal edge-cracked plate under uniaxial tension: (a) normalized Mode-I (b) rate of Mode-I}  
+\end{figure}
+{\it Probabilistic analysis } A probabilistic analysis is carried out for the same plate. Adopting the dimensions of the plate
+are taken to be W = 0.508 m  and 2L = 5.08 m  (i.e.$L/W = 5$) with randomness (uncertainty) in the applied farfield
+ tensile stress of r 1 , crack length a, Young’s modulus $E$ and Poisson’s ratio $\nu$ , and fracture toughness $J_{Ic}$ . The Mode-I response 
+ matrix [$K_s $] is calculated using the scaled boundary finite element method (SBFEM). For the sake of comparison with
+the aforementioned reference, the value of the J-integral, yet another fracture parameter commonly used in probabilistic
+analysis, is determined by the Griffith-Irwin relation given as $J = K^2 /E$ for the plane stress condition. The load, crack size,
+and material properties are treated as statistically independent random variables. The Monte Carlo simulation (MCS)
+method is used to determine the probability of failure P F . The mean far-field tensile stress is indicated as $E[\sigma^\infty$] where E[.] is
+the expectation (mean) operator. Figure plots the probability of failure P F VS . the mean far-field tensile stress $E[\sigma^\infty$] for both
+the deterministic ($COV^{a/W}$ = 0\%) and random ($COV^{a/W}$ = 5\%, 10\%, and 15\%) crack sizes. As expected, the results indicate that the
+failure probability increases with the $COV^{a/W}$(uncertainty).The failure probability can be much larger than the probabilities
+calculated for a deterministic crack size, particularly when the uncertainty of a/W is large.
+\begin{figure}[H]
+    \centering
+        \fbox{\includegraphics[width=.5\textwidth]{s21.png}}
+    \captionsetup{labelformat=empty}
+    \caption{Failure probability of horizontal edge-cracked plate under uniaxial tension for varying uncertainty}  
+\end{figure}
+
+
+\rule{\textwidth}{.1em}
+\section{Conclusion}
+$\Rightarrow$ Fracture initiation and stable crack growth are local fracture phenomena. Therefore, in order to
+apply the energy principle, the variation of the local crack tip stresses and strains and the associated
+detailed fracture process have to be taken into consideration
+\\\\$\Rightarrow$ Fracture toughness is the measure of the fracture ductility of a material. The fracture ductility of
+a material is a function of the superimposed hydrostatic tensile stress. The tearing modulus is the
+measure of the increase in fracture ductility as the hydrostatic tension is reduced when the fr icture
+surface changes from mode I to a combination of modes I, II, and III during stable crack growth.
+\\\\$\Rightarrow$ In order to extend fracture mechanics beyond the realms of K and J, the fracture mechanism has
+to be found, the crack tip stress and/or strain directly responsible for the fracture process has to be
+established, and the local stresses and strains have to be related to far field parameters.
+\\\\$\Rightarrow$ The stress smoothing error estimators highlighted in this work seem to offer many advantages.
+They appear to be robust and efficient. Further work is needed in comparing these and other
+estimators so that they can be incorporated into a commercial adaptive FE program.
+There are many other areas of the adaptive FEM that need to be investigated, such as error
+estimators, solution algorithms, extension to three dimensions, non-linear and dynamic analyses
+and the incorporation of these in an optimized user-friendly environment using ideas of
+knowledge-based systems and expert systems for fracture-proof design
+\\\\$\Rightarrow$ A probabilistic fracture mechanics (PFM) anal-
+ysis is often necessary in order to achieve accurate
+estimates of reliability of structural components and
+to study the effects on reliability of systematic and
+stochastic variation in controlling parameters.
+\\\\$\Rightarrow$To enhance future PFM applications, data col-
+lection efforts should seek to quantify the variational
+characteristics and the uncertainties of the studied
+parameters. In this manner, a data base of input pa-
+rameter probability distributions can be formed to
+facilitate future PFM and other engineering probabili-
+ty and risk analyses.
+\\\\$\Rightarrow$ The reliability of cracked structures are evaluated by a Monte Carlo probabilistic method. Uncertainties in the crack con-
+figuration are modeled using a shape sensitivity approach with the aid of the scaled boundary finite element method
+(SBFEM). In contrast to the finite element method, efficiency, simplicity, and versatility in achieving this task is recognizable
+with the SBFEM since no fine internal meshing nor remeshing is necessary for shape sensitivity calculations, noticeably
+reducing computational effort. Comparative studies show good agreement with results obtained from references. For the
+same problem, considerably lesser number elements and nodes are required. Indeed, the SBFEM can substantiate for accu-
+rate probabilistic fracture analysis. The present technique can also be extended to study the reliability of structures with
+multi-cracks.
 
 
 
