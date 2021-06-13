@@ -8,7 +8,14 @@
 \usepackage{tabto}
 \usepackage{caption}
 \usepackage{setspace}
-
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
 \setlength{\parindent}{0em}
 \setlength{\fboxsep}{0em}
 \setlength{\fboxrule}{1pt}
@@ -117,6 +124,10 @@ knowledge.\\~\\
 \pagebreak
 %------------------------------------------------------------------
 }
+\tableofcontents
+\pagebreak
+\listoffigures
+\pagebreak
 \rule{\textwidth}{.1em}
 \begin{center}
 \textbf{Abstract}
@@ -1111,7 +1122,48 @@ The failure criteria can be simplified, for 2D Mixed-Mode loading, as
     &\text{where,}\\
     &K_{eff} = \cos\frac{\theta_c}{2}\left(K_1 \cos^2\frac{\theta_c}{2}- \frac{3}{2}K_{II}\sin\theta_c\right)
 \end{align*}
+\subsection{Monte Carlo Simulation (MCS) method}
+\subsubsection{Direct Monte Carlo Reliability}
+The Monte Carlo Simulation (MCS) method is widely accepted as a logical tool for modeling structural behavior with significant 
+uncertainties or randomness of input parameters. The execution of the method is very simple and versatile for
+engineering applications. A $N$-dimensional random vector {\bf X} with components {\bf X} = $(X_1 , X_2 , . . . , X_N )$ characterizing the 
+uncertainties in the input parameters such as the load, crack geometry, and material properties is considered. For instance, if
+the crack size a, elastic modulus E, the far field applied stress $\sigma^\infty$ , and the Mode-I fracture toughness $K_{Ic}$ are all random input
+variables, then \textbf{X} = \textbf{X}$(a, E, \sigma^\infty , K_{Ic} )$ applies. The structure is deemed to fail if the computed SIF K > K Ic . To be precise, Mode-I
+failure is dictated by $K_I > K_{Ic}$ while for Mixed-Mode it is ${K_{eff} > K_{Ic} }$, as mentioned earlier. Clearly, this
+requirement cannot be satisfied de-terministically as $K$ is dependent on the random vector while $K_{Ic}$ is also random. Note
+that, rather than depending on customized response surface approximations, the randomness in crack size $a$ is accounted
+for by the response matrix $[K_s ]$ obtained with the SBFEM.
 
+The methodology of the MCS reliability prediction is as follows. The random input variables may or may not be statistically 
+independent of each other. Given their specific statistical parameters, each input variable is randomly generated from
+some prescribed probability distribution function, based on which the response variable is calculated. This process encompasses 1 MCS 
+cycle and the constituents within the cycle are together taken as 1 sample point. Examples of commonly used
+distributions for probabilistic analysis include the Gaussian, or normal, distributions defined by
+
+
+\begin{align*}
+    f(x) = \frac{1}{\sqrt{2 \pi S^2}}e^{-\frac{(x - \mu )^2}{2 S^2}}\\~\\
+\text{and lognormal distribution is given by}\\~\\
+    f(x) = \frac{1}{x\sqrt{2 \pi S^2}}e^{-\frac{(\ln x - \mu )^2}{2 S^2}}\\ \tag{28}
+\end{align*}
+
+where $f(x)$ is the probability density function, and $S$ and $\mu$ are statistical parameters. The coefficient of variation $COV$ is expressed as
+\begin{align*}
+    COV = S/\mu \tag{29}
+\end{align*}
+
+A large number of such MCS cycles are performed to collect the equal number of sample points. A statistical analysis is 
+carried out for all the sample points to obtain statistical parameters such as the mean $\mu$ , standard deviation $S$, and coefficient of
+variation $COV$ of the response variable (i.e. SIFs \{$K$\}). Likewise, for each sample an analysis is carried out to evaluate failure,
+i.e. $K > K_{Ic}$ . Letting $N_F$ be the number of simulations when $K$ exceeds $K_{Ic}$ and $N$ to be the total number of simulation cycles, the
+estimation for the probability that failure has occurred, $P_F$ , can be directly expressed by
+
+\begin{align*}
+    P_F = \frac{N_F}{N} \tag{30}
+\end{align*}
+Inevitably, the MCS method would require a sufficient number of entries in the response matrix [K s ] for a reliable 
+probabilistic analysis, particularly when the uncertainty in crack size is very high
 
 
 \end{document}  
