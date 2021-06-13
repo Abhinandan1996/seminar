@@ -1163,7 +1163,48 @@ estimation for the probability that failure has occurred, $P_F$ , can be directl
     P_F = \frac{N_F}{N} \tag{30}
 \end{align*}
 Inevitably, the MCS method would require a sufficient number of entries in the response matrix [K s ] for a reliable 
-probabilistic analysis, particularly when the uncertainty in crack size is very high
+probabilistic analysis, particularly when the uncertainty in crack size is very high.
+
+\subsubsection{First-Order Second-Moment (FOSM) Reliability}
+Although it can be determined computationally, the probability of failure P F is also commonly represented by the integral
+\begin{align*}
+    P_F = \int_{g(\text{X}) \le 0} f_{\text{X}}(\text{X})d\text{X} \tag{31}
+\end{align*}
+where X is the vector of random variables, $f_\text{X}$ (X) is the joint probability density function, and g(X) is the performance function
+which is given by
+\begin{align*}
+    g(X) = K_{Ic} - K
+\end{align*}
+The integral is difficult to evaluate explicitly due to multiple integrals that need to be performed, while the joint
+probability density function itself is complicated to attain statistically. Often, a first-order approximation technique of the
+integral is required. A simple example of this is the first-order second-moment (FOSM) method. The controlling 
+characteristic parameter of the FOSM is defined as the Cornell reliability index $\beta$
+\begin{align*}
+    \beta = \frac{\mu_{K_{Ic}}-\mu_K}{\sqrt{S_{K_{Ic}}^2 - S_K^2}} \tag{32}
+\end{align*}
+
+where $\mu$ and $S$ , are the statistical mean values and the standard deviations of the fracture toughness $K_{Ic}$ and
+stress intensity factor (SIF).Using this index, the probability of failure is approximated by
+\begin{align*}
+    P_F = \phi(-\beta) \tag{33}
+\end{align*}
+where $\phi(u)$ is the cumulative probability distribution function and is given by
+\begin{align*}
+    \phi(u) = \frac{1}{\sqrt{2 \pi}}\int_{-\infty}^{u} e^{\frac{-t^2}{2}}  \tag{34}
+\end{align*}
+\subsection{Summary Of Monte Carlo Probabilistic Method}
+The reliability of cracked structures are evaluated by a Monte Carlo probabilistic method. Uncertainties in the crack configuration 
+are modeled using a shape sensitivity approach with the aid of the scaled boundary finite element method
+(SBFEM). In contrast to the finite element method, efficiency, simplicity, and versatility in achieving this task is recognizable
+with the SBFEM since no fine internal meshing nor remeshing is necessary for shape sensitivity calculations, noticeably
+reducing computational effort. Comparative studies show good agreement with results obtained from references. For the
+same problem, considerably lesser number elements and nodes are required. Indeed, the SBFEM can substantiate for 
+accurate probabilistic fracture analysis. The present technique can also be extended to study the reliability of structures with
+multi-cracks
+
+
+
+
 
 
 \end{document}  
