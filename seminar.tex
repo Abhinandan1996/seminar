@@ -151,8 +151,8 @@ represented by an infinitesimally narrow ellipse. Based on Inglis elastic stress
 Griffith formulated his well known energy criterion for brittle fractures. At the fracture initiation of a cracked brittle solid in the 
 condition of fixed grip, the release rate of the stored strain energy equals or exceeds the dissipative surface energy rate.
 \(\partial U_\epsilon / \partial a \geq \partial U_s / \partial a = 2 \gamma \), 
-where $U_d$ and $U_S$ are strain energy and surface energy; $\gamma$,  the surface energy per unit area; and $a$, crack length.$\gamma$ 
-is constant for a given material. Assuming a constant dissipative rate of plastic energy $\Gamma $ , 
+where $U_\epsilon$ and $U_S$ are strain energy and surface energy; $\gamma$,  the surface energy per unit area; and $a$, crack length.$\gamma$ 
+is constant for a given material. Assuming a constant dissipative rate of plastic energy $\varGamma $ , 
 Irwin and Orowan extended the energy criterion to metallic solids, where plastic deformation takes place at crack tips.
 \\\\The crack tip elastic stresses, strains and displacements are characterized by the stress intensity factor, $K$.  
 Incase of small scale yielding, $SSY, K$ characterizes crack tip stresses, strains, and displacements even within a 
@@ -165,7 +165,7 @@ fields can be characterized by $J$, which is a contour independent
 integral. $J$ is also the rate of potential energy change during 
 the cracking process in a non-linear elastic solid. $J$ has been 
 widely used to study non-linear fracture mechanics.
-\subsection{Defining Fracture}Figure shows a cracked sample and its load P vs load point displacement, 6. The “crack” suddenly starts to propagate internally at A. The increased crack length increases the compliance of the specimen and causes the sudden load drop from A to A'. As the load increases, the crack continues its internal growth. At B, the crack front at the specimen surface starts to move forward, and the crack continues to grow in a “stable” manner to the maximum load C. D is the point of final separation, fracture mechanics studies the fracture initiation at A and the stable crack growth from A' to B and onwards. Often the point of fracture initiation is not so clearly defined as shown in the figure. In this case, certain degree of arbitrariness has to be introduced in order to define fracture initiation. Fracture can be defined in terms of the above described macro-features or in terms of the micro-structural features such as fracture of brittle inclusions,etc.
+\subsection{Defining Fracture}Figure shows a cracked sample and its load P vs load point displacement, $\delta$. The “crack” suddenly starts to propagate internally at A. The increased crack length increases the compliance of the specimen and causes the sudden load drop from A to A'. As the load increases, the crack continues its internal growth. At B, the crack front at the specimen surface starts to move forward, and the crack continues to grow in a “stable” manner to the maximum load C. D is the point of final separation, fracture mechanics studies the fracture initiation at A and the stable crack growth from A' to B and onwards. Often the point of fracture initiation is not so clearly defined as shown in the figure. In this case, certain degree of arbitrariness has to be introduced in order to define fracture initiation. Fracture can be defined in terms of the above described macro-features or in terms of the micro-structural features such as fracture of brittle inclusions,etc.
 \begin{figure}[H]
     \centering
     \fbox{\includegraphics[width=.5\textwidth]{s1.png}}
@@ -180,11 +180,7 @@ $\sigma_{ij}$, $\epsilon_{ij}$ and $u_i$ can be expressed in terms of:
     \\\epsilon_{ij}(r, \theta) &= \frac{k_1}{\sqrt{2 \pi r}} \bar{\epsilon}_{ij(1)}(\theta) + ... \tag{1} \label{1}
     \\u_{ij}(r, \theta) &= \frac{k_1 \sqrt{(2 r)}}{\pi} \bar{u}_{i(1)}(\theta) + ...
 \end{align*}
-\begin{figure}[h]
-    \begin{center}
-        \fbox{\includegraphics[width=.2\textwidth]{s2.png}   } 
-    \end{center}
-\end{figure}
+
 
 where $r$ and $\theta$ are polar coordinates, the crack tip is located at the origin of the reference system, and
 the crack line coincides with the line $\theta = \pi, \bar{\sigma}_{ij}, \bar{\epsilon}_{ij}$ and $, \bar{u}_{i}$ give the distributions of their corresponding 
@@ -236,19 +232,19 @@ where $\bar E = E/(1 - \nu^2)$ for plain strain case and $\bar{E} = E$ for plane
 
 
 
-\subsection{Grffith Critertion}
+\subsection{Griffith Criterion}
 Griffith proposed the criterion of brittle fracture based on the principle of global energy balance.
 \begin{align}
     \frac{\partial}{\partial a}(U_\epsilon + U_\gamma) = 0 \tag{5} \label{5}
 \end{align}
 where $U_\epsilon$  is the strain energy and $U_\gamma$ is the surface energy.
 \begin{align*}
-    G = -\frac{\partial U_\epsilon}{\partial a} \ and \ \frac{\partial U_\gamma}{\partial a} = 2 \gamma
+    &G = -\frac{\partial U_\epsilon}{\partial a} \\ &and \\ &\frac{\partial U_\gamma}{\partial a} = 2 \gamma
 \end{align*}
 which is constant. For a small crack in a large plate, we habbve, at fracture.
 \begin{align*}
-    &G_c = (1 - \nu ^ 2)\frac{\sigma_{c} ^ 2 \pi a}{E} = 2 \gamma \ \ \ and \ \ \ \sigma_c = \sqrt{frac{2 \gamma E}{1 - \nu ^ 2 } \pi a}
-    \\\text{Hence, \ \ \ \ \ \ \ \ \ \ \ \ \ } & \sigma_c \sqrt{(\pi a)} = \text{material constant}
+    &G_c = (1 - \nu ^ 2)\frac{\sigma_{c} ^ 2 \pi a}{E} = 2 \gamma \\ &and \\ &\sigma_c = \sqrt{\frac{2 \gamma E}{(1 - \nu ^ 2)\pi a } }
+    \\\\\text{Hence, \ \ \ \ \ \ \ \ \ \ \ \ \ } & \sigma_c \sqrt{(\pi a)} = \text{material constant}
 \end{align*}
 Hence, for perfectly brittle solid $k$ characterizes $\sigma_{ij}$ and $\epsilon_{ij}$.
 For same material and same crack tip elastic stresses and strains, the $K_c$(critical value) must be constant.
@@ -258,7 +254,7 @@ For same material and same crack tip elastic stresses and strains, the $K_c$(cri
 
 \subsection{The Extension Of The Griffith Criterion}
 A correct fracture theory should agree with know fracture phenomena. If not, the analysis must 
-be wrong. The fracture stress, $sigma_c$, of a large specimen with a long crack is lower
+be wrong. The fracture stress, $\sigma_c$, of a large specimen with a long crack is lower
 than the fracture stress of a small specimen with a short crack as shown schematically in figure
 below.
 
@@ -294,12 +290,12 @@ and $U_p \propto r_{p} ^{2}$ which gives
 C is proportionality constant, which gives:
 \begin{align}
     \frac{\sigma_{c}^{2} \pi a (1 - \nu ^ 2)}{E} = Ca \qquad
-\Rightarrow \qquad &\sigma_c = \sqrt{(\frac{CE}{\pi (1 - \nu ^ 2)})} = \text{constant} \nonumber
+\Rightarrow \qquad &\sigma_c = \sqrt{\frac{CE}{\pi (1 - \nu ^ 2)}} = \text{constant} \nonumber
 \end{align}
 
 The experimental evidences that demonstrate the failure of the global energy balance are well known.
 But they have not been recognized as such. Figure shows the thickness effects on fracture toughness.
-The fracture toughness varies from 40 MPa$\sqrt{\text{m}}$ for KI, to the maximum value of 107 MPa$\sqrt{\text{m}}$. The
+The fracture toughness varies from 40 MPa$\sqrt{\text{m}}$ for $K_{Ic}$, to the maximum value of 107 MPa$\sqrt{\text{m}}$. The
 strain energy release rates of the two limiting cases of plane strain and plane stress states differ by a
 factor of $(1 - \nu ^ 2)$. $v$ is Poisson’s ratio. The difference is approximately 10\%. If the plastic energy
 dissipation rate is constant, the difference in fracture toughnesses should not be more than 10\%. The
@@ -336,7 +332,7 @@ The fracture stress of a notched specimen depends on notch root radius, $R$, as 
 in Figure. $\sigma_c$ decreases with $R$. However, if the notch root radius is less than a certain value $R_c$,$\sigma_c$is no
 longer $R$ dependent. When a solid contains a sharp notch of initial root radius $R_i$, the radius increases
 with the applied load. If the root radius increment, $\Delta R$ is much larger than $R_i$, the fracture stress $\sigma_c$ is
-independent of $R_i$. If the size of the fracture process zone, $\rho_F$ is much larger than $R_i$, CT~ will also be
+independent of $R_i$. If the size of the fracture process zone, $\rho_F$ is much larger than $R_i$, $\sigma_c$ will also be
 independent of $R_i$. In our analysis, we assume $R$ is always less than $R_c$.
 
 \begin{figure}[H]
@@ -411,7 +407,7 @@ fracture takes place between the brittle particles. If the brittle inclusions ar
 may cause an avalanche effect, one particle fracturing rapidly after the other. The fracturing process
 stops when the crack is out of the zone of the high tensile stress in the plane strain triaxial state of
 tension. The crack extension could be sizable and could cause noticeable load drop. This is the well
-known phenomenon of pop-in and is a $local instability$. Hence, $K_{lc}$ is the result of a local instability
+known phenomenon of pop-in and is a $local\  instability$. Hence, $K_{lc}$ is the result of a local instability
 phenomenon, not a global instability.
 \\\\
 Local fractures may also occur through interface separation between particles and matrix; it may
@@ -446,19 +442,19 @@ needs to be imposed for metallic fractures. A thickness requirement is also need
 \subsection{Fracture Toughness And Fracure Ductility}
 The initiated local fracture will continue to propagate. The extent of fracture propagation varies
 according to the “brittleness” of the material. The fracturing processes can be classified in three
-categories.
+categories.\\\\
 (1) Once initiated, the localized fracture will continue to grow rapidly across the specimen without
-further increase in $\sigma_\infty$ or $K$. It is very brittle (Fig. a).
+further increase in $\sigma_\infty$ or $K$. It is very brittle.\\\\
 (2) Once initiated, the localized fracture will continue to grow to a sizable extent in a rapid manner
 while ($\sigma_\infty$ and $K$ drop. After the initial fracture, it needs to increase $K$ in order to continue to grow
-further (Fig. b).
+further.
 Fracture is initiated in the interior in the plane strain region, and the initial fracturing process will
 stop when the crack is out of the zone of triaxial state of tension.
-
+\\\\
 (3) If fracture initiation is caused by brittle particles and if the brittle particles are small and far
 apart, once the local fracture is initiated, it needs a considerable amount of plastic deformation to grow
 across the regions between particles. A crack grows primarily by the process of plastic deformation.
-This material is ductile and tough (Fig. c).
+This material is ductile and tough.
 \begin{figure}[H]
     \centering
     \fbox{\includegraphics[width=.5\textwidth]{s9.png}}
@@ -527,7 +523,7 @@ extensive analytic formulation which is different for each new problem. The meth
 nonetheless, for establishing benchmark solutions to compare with other methods as the degree
 of accuracy can be guaranteed. The method is only applicable to elasticity problems (without
 non-linearities). For three-dimensional problems, the derivation of the integral equations becomes
-quite laborious.
+quite laborious.\\\\
 The \textit{Boundary Integral Equation  Method} (BIEM) is a numerical approach to the solution of
 linear boundary value problems with known Green's function solutions. The boundary of the
 domain of interest is discretized using "elements" which are interconnected at discrete points called
@@ -544,11 +540,9 @@ where $U_i$ and $t_i$ are the surface displacement and traction vectors on the d
 $U_{ij}$ and $T_{ij}$ are related to the Green's function solutions for displacements and tractions,
 respectively. At each boundary point, either $u_j$ is specified (on $\varGamma_u$) or $t_j$ is specified on ($\varGamma_t$), while
 the variable is unknown.
-\\\\
 For static problems, the BIEM
 reduces to the solution of a system of dense linear equations which may be non-symmetric. If
-surface data are the only quantities required (as is the case in many fracture problems where the
-only interesting results are the stress intensity factors and the compliance), the BIEM is often
+surface data are the only quantities required,the BIEM is often
 computationally superior to the FEM for two-dimensional problems. If interior data are required,
 the method is computationally costly. For three-dimensional problems, BIEM solutions are often
 very expensive as the resulting linear system is dense, unbanded and often non-symmetric, and often

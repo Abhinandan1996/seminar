@@ -1,7 +1,7 @@
 \contentsline {section}{\numberline {1}Fundamental Basis Of Fracture Mechanics}{6}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Defining Fracture}{6}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Elastic Stress Field}{6}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Grffith Critertion}{8}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.3}Griffith Criterion}{7}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}The Extension Of The Griffith Criterion}{8}{subsection.1.4}%
 \contentsline {subsubsection}{\numberline {1.4.1}Global Energy Balance Theory}{8}{subsubsection.1.4.1}%
 \contentsline {subsubsection}{\numberline {1.4.2}Sharp Notch Analysis}{9}{subsubsection.1.4.2}%
@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {3.3}Flaw Distribution}{18}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Non-Destructive Testing(NDT)}{18}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Material Properties}{18}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Fatigue}{18}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.6}Fatigue}{19}{subsection.3.6}%
 \contentsline {subsection}{\numberline {3.7}Mathematical Techniques}{19}{subsection.3.7}%
 \contentsline {section}{\numberline {4}Probabilistic fracture mechanics by using Monte Carlo simulation and the scaled boundary finite element method}{19}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Scaled Boundary Finite Element Method(SBFEM) For Shape Sensitivity Analysis}{20}{subsection.4.1}%
