@@ -32,9 +32,14 @@
 \contentsline {subsubsection}{\numberline {4.2.1}Mode-I failure}{22}{subsubsection.4.2.1}%
 \contentsline {subsubsection}{\numberline {4.2.2}Mixed-Mode Failure}{22}{subsubsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.3}Monte Carlo Simulation (MCS) method}{22}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Direct Monte Carlo Reliability}{22}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}First-Order Second-Moment (FOSM) Reliability}{23}{subsubsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.4}Summary Of Monte Carlo Probabilistic Method}{24}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Edge-Cracked Plate Under Uniaxial Tension (Mode-I) With Varying Crack Length(Example)}{24}{subsection.4.5}%
-\contentsline {subsubsection}{\numberline {4.5.1}Shape Sensitivity Analysis}{24}{subsubsection.4.5.1}%
-\contentsline {section}{\numberline {5}Conclusion}{26}{section.5}%
+\contentsline {subsubsection}{\numberline {4.3.1}The deterministic fracture mechanics problem}{22}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Distributions of the input random variables {$C, \Delta \sigma , A_i$}}{23}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}The probabilistic analysis}{24}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}Shape Sensitivity Analysis}{25}{subsubsection.4.3.4}%
+\contentsline {subsubsection}{\numberline {4.3.5}Shape Sensitivity Analysis}{25}{subsubsection.4.3.5}%
+\contentsline {subsubsection}{\numberline {4.3.6}Direct Monte Carlo Reliability}{25}{subsubsection.4.3.6}%
+\contentsline {subsubsection}{\numberline {4.3.7}First-Order Second-Moment (FOSM) Reliability}{26}{subsubsection.4.3.7}%
+\contentsline {subsection}{\numberline {4.4}Summary Of Monte Carlo Probabilistic Method}{26}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Edge-Cracked Plate Under Uniaxial Tension (Mode-I) With Varying Crack Length(Example)}{26}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}Shape Sensitivity Analysis}{27}{subsubsection.4.5.1}%
+\contentsline {section}{\numberline {5}Conclusion}{29}{section.5}%

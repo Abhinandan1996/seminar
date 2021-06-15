@@ -1,11 +1,11 @@
 # Fdb version 3
-["xdvipdfmx"] 1623781863 "seminar.xdv" "seminar.pdf" "seminar" 1623781865
-  "seminar.xdv" 1623781863 759112 b27a943d31ef7491f0a50790422fd902 "xelatex"
+["xdvipdfmx"] 1623794128 "seminar.xdv" "seminar.pdf" "seminar" 1623794147
+  "seminar.xdv" 1623794128 806700 1ac5a62eeb357ca1c53fac07bcceee7d "xelatex"
   (generated)
   "seminar.pdf"
-["xelatex"] 1623781858 "/home/abhinandan/Desktop/seminar/seminar.tex" "seminar.xdv" "seminar" 1623781865
+["xelatex"] 1623794127 "/home/abhinandan/Desktop/seminar/seminar.tex" "seminar.xdv" "seminar" 1623794147
   "/etc/texmf/web2c/texmf.cnf" 1623063391 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/abhinandan/Desktop/seminar/seminar.tex" 1623781854 82159 f5643635b79176c51512d9e10a36a8d8 ""
+  "/home/abhinandan/Desktop/seminar/seminar.tex" 1623794145 87575 1b2370565ba1e8d4df73bc69b7f8e064 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -98,6 +98,9 @@
   "s19.png" 1623619604 62496 591b7a3ebc96fb6b1e3b0bd131fb8a24 ""
   "s20.png" 1623620553 56742 7ba92a092237d94e31ae78aa49b80b76 ""
   "s21.png" 1623621385 50582 bc00366a5140582e13581651d8f4a961 ""
+  "s23.png" 1623792954 66255 e76ef9e34f149f1d2a1fad30e97cf39e ""
+  "s24.png" 1623793971 160190 8f44768ae15ad30a991cb7c742bf9ba0 ""
+  "s25.png" 1623794072 48948 7aec9c638d191307ed82e14f8ba59eeb ""
   "s3.png" 1623153831 7586 7ae5132e61176b253b32ee4804716117 ""
   "s4.png" 1623176492 11768 6af47ee538177f917b446f42eab9d942 ""
   "s5.png" 1623179423 18111 6283be9c4d74b1f20afc0e8b14dcefe4 ""
@@ -105,15 +108,15 @@
   "s7.png" 1623190139 9794 4e372a5777b6d612517f5eab8fb34e5e ""
   "s8.png" 1623247821 14203 27d22d4b2e5a8b33cdb8a022a53bb9c5 ""
   "s9.png" 1623252596 9800 0f739dfb04079ab6dfdd855a9a8e0916 ""
-  "seminar.aux" 1623781863 11860 24aa0ed35dbf25e62c428fe3e408dade "xelatex"
-  "seminar.lof" 1623781863 2982 8906cfdd4525ae7d6e1bca2a46951d8c "xelatex"
-  "seminar.out" 1623781863 3737 c46b258aaa2fcb1e780dcc379156a602 "xelatex"
-  "seminar.tex" 1623781854 82159 f5643635b79176c51512d9e10a36a8d8 ""
-  "seminar.toc" 1623781863 4052 f4cc02ecbb21349b3472e83c4154045a "xelatex"
+  "seminar.aux" 1623794128 13052 d7c18d13506a3b92eedb4c23d236cc86 "xelatex"
+  "seminar.lof" 1623794128 3310 33effbb351f18047005c38ff1587a0b6 "xelatex"
+  "seminar.out" 1623794128 4264 6d4755c4f9e6d8494b422aa1c5dafc40 "xelatex"
+  "seminar.tex" 1623794145 87575 1b2370565ba1e8d4df73bc69b7f8e064 ""
+  "seminar.toc" 1623794128 4629 41111297c2e1099dab89f85c80f44a35 "xelatex"
   (generated)
   "seminar.lof"
-  "seminar.aux"
   "seminar.out"
-  "seminar.toc"
-  "seminar.log"
+  "seminar.aux"
   "seminar.xdv"
+  "seminar.log"
+  "seminar.toc"
