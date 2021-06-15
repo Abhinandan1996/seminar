@@ -1178,7 +1178,7 @@ and produces only minor errors. The relationship
 is obtained from
 C r - M o - V steel crack growth data and is used
 to compute median crack growth rates in in./cyc.
-For this steel the mean yield stress is $\bar{\sigma = 85 ksi}$.
+For this steel the mean yield stress is $\bar{\sigma} = 85 ksi$.
 The above assumptions can be compacted into the
 notation
 \begin{align*}
@@ -1196,7 +1196,6 @@ stress gradients, and spindle-to-spindle design and
 usage variations. The probabilistic stress distribution
 shown is formulated from three assumptions. 
 These are (1) log-normality; (2) 95\% of the
-
 spindle material, by volume, will encounter 
 $\Delta \sigma <0.80 \bar{\sigma}_y$ = 68 ksi; and (3) 95\% of the material volume
 will encounter $\Delta \sigma > .25 \bar{\sigma}_y$ = 21 ksi.
@@ -1222,7 +1221,7 @@ and the probability of failure is P(E) = P(Y < 3000
 cycles).
 To obtain an analytical solution for the distribution of fatigue life, we utilize the following theorem
 \begin{align*}
-    &X_1 = \bar{N}(\mu_1, S_1),    X_1 = \bar{N}(\mu_1, S_1)\\
+    &X_1 = \bar{N}(\mu_1, S_1),    X_2 = \bar{N}(\mu_2, S_2)\\
     \\&Y = P_1 X_1 + P_2 X_2 + P_3\\
     \\&Y = \bar{N}(\mu_y, S_y)\\
     \\&\mu_y = P_1 \mu_1 + P_2 \mu_2 + P_3\\
@@ -1239,15 +1238,26 @@ and $k_\alpha$ is the standard deviate corresponding to particular $\alpha$
     \fbox{\includegraphics[width=\textwidth]{s24.png}}
     \captionsetup{labelformat=empty}  
 \end{figure}
-\subsubsection{Shape Sensitivity Analysis}
+
+
+\subsubsection{Probabilistic addition of crack initiation cycles} 
+The MC program can be utilized to investigate the effect of non-zero 
+initiation life $N_i$ on total fatigue life. For example, the total fatigue life can be written as
+\begin{align*}
+    N = N_i(\Delta \sigma, A_i, D) + N_{pr}(\Delta \sigma, A_i, C)
+\end{align*}
+where $N_i$ is proportional to $D$, a dimensionless random
+variable with distribution
+\begin{align*}
+    \log D = \bar{N}(0, 0.196)
+\end{align*}
+
 \begin{figure}[H]
     \centering
     \fbox{\includegraphics[width=.4\textwidth]{s25.png}}
     \captionsetup{labelformat=empty} 
     \caption{Probability distribution of fatigue lifetime of defected turbine rotor spindle} 
 \end{figure}
-\subsubsection{Shape Sensitivity Analysis}
-
 
 
 \subsubsection{Direct Monte Carlo Reliability}
@@ -1361,7 +1371,7 @@ Analytical solutions are also provided for an infinite domain (i.e. $L/
 W = \infty$).
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=.7\textwidth]{s20.png}}
+    \fbox{\includegraphics[width=.55\textwidth]{s20.png}}
     \captionsetup{labelformat=empty}
     \caption{Horizontal edge-cracked plate under uniaxial tension: (a) normalized Mode-I (b) rate of Mode-I}  
 \end{figure}
@@ -1404,25 +1414,19 @@ There are many other areas of the adaptive FEM that need to be investigated, suc
 estimators, solution algorithms, extension to three dimensions, non-linear and dynamic analyses
 and the incorporation of these in an optimized user-friendly environment using ideas of
 knowledge-based systems and expert systems for fracture-proof design
-\\\\$\Rightarrow$ A probabilistic fracture mechanics (PFM) anal-
-ysis is often necessary in order to achieve accurate
+\\\\$\Rightarrow$ A probabilistic fracture mechanics (PFM) analysis is often necessary in order to achieve accurate
 estimates of reliability of structural components and
 to study the effects on reliability of systematic and
 stochastic variation in controlling parameters.
-\\\\$\Rightarrow$To enhance future PFM applications, data col-
-lection efforts should seek to quantify the variational
+\\\\$\Rightarrow$To enhance future PFM applications, data collection efforts should seek to quantify the variational
 characteristics and the uncertainties of the studied
-parameters. In this manner, a data base of input pa-
-rameter probability distributions can be formed to
-facilitate future PFM and other engineering probabili-
-ty and risk analyses.
-\\\\$\Rightarrow$ The reliability of cracked structures are evaluated by a Monte Carlo probabilistic method. Uncertainties in the crack con-
-figuration are modeled using a shape sensitivity approach with the aid of the scaled boundary finite element method
+parameters. In this manner, a data base of input parameter probability distributions can be formed to
+facilitate future PFM and other engineering probability and risk analyses.
+\\\\$\Rightarrow$ The reliability of cracked structures are evaluated by a Monte Carlo probabilistic method. Uncertainties in the crack configuration are modeled using a shape sensitivity approach with the aid of the scaled boundary finite element method
 (SBFEM). In contrast to the finite element method, efficiency, simplicity, and versatility in achieving this task is recognizable
 with the SBFEM since no fine internal meshing nor remeshing is necessary for shape sensitivity calculations, noticeably
 reducing computational effort. Comparative studies show good agreement with results obtained from references. For the
-same problem, considerably lesser number elements and nodes are required. Indeed, the SBFEM can substantiate for accu-
-rate probabilistic fracture analysis. The present technique can also be extended to study the reliability of structures with
+same problem, considerably lesser number elements and nodes are required. Indeed, the SBFEM can substantiate for accurate probabilistic fracture analysis. The present technique can also be extended to study the reliability of structures with
 multi-cracks.
 
 
