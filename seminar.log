@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.7)  17 JUN 2021 01:21
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.7)  17 JUN 2021 19:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -303,30 +303,30 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 18.
  (./seminar.aux)
 \openout1 = `seminar.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 26.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -368,56 +368,56 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 24.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 24.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 24.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 24.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 24.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 24.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 24.
-LaTeX Font Info:    Redeclaring math accent \check on input line 24.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 24.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 24.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 24.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 24.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 26.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 26.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 26.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 26.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 26.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 26.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 26.
+LaTeX Font Info:    Redeclaring math accent \check on input line 26.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 26.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 26.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 26.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 26.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 24.
+(Font)              `operators' in the math version `normal' on input line 26.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/AmerigoBT(0)/m/n on input line 24.
+(Font)                  OT1/cmr/m/n --> TU/AmerigoBT(0)/m/n on input line 26.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 24.
+(Font)              `operators' in the math version `bold' on input line 26.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/AmerigoBT(0)/m/n on input line 24.
+(Font)                  OT1/cmr/bx/n --> TU/AmerigoBT(0)/m/n on input line 26.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/AmerigoBT(0)/m/n --> TU/AmerigoBT(0)/m/n on input line 24.
+(Font)                  TU/AmerigoBT(0)/m/n --> TU/AmerigoBT(0)/m/n on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/AmerigoBT(0)/m/it on input line 24.
+(Font)                  OT1/cmr/m/it --> TU/AmerigoBT(0)/m/it on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/AmerigoBT(0)/b/n on input line 24.
+(Font)                  OT1/cmr/bx/n --> TU/AmerigoBT(0)/b/n on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 24.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 24.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 26.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/AmerigoBT(0)/m/n --> TU/AmerigoBT(0)/b/n on input line 24.
+(Font)                  TU/AmerigoBT(0)/m/n --> TU/AmerigoBT(0)/b/n on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/AmerigoBT(0)/b/it on input line 24.
+(Font)                  OT1/cmr/bx/it --> TU/AmerigoBT(0)/b/it on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 24.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 24.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 26.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -429,7 +429,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: xetex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 24.
+Package hyperref Info: Link coloring ON on input line 26.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -439,9 +439,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count285
 )
-LaTeX Info: Redefining \ref on input line 24.
-LaTeX Info: Redefining \pageref on input line 24.
-LaTeX Info: Redefining \nameref on input line 24.
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
  (./seminar.out) (./seminar.out)
 \@outlinefile=\write3
 \openout3 = `seminar.out'.
@@ -483,32 +483,32 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 File: iitr.png Graphic file (type bmp)
 <iitr.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--64
+Underfull \hbox (badness 10000) in paragraph at lines 58--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--64
+Underfull \hbox (badness 10000) in paragraph at lines 58--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--64
+Underfull \hbox (badness 10000) in paragraph at lines 58--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--75
+Underfull \hbox (badness 10000) in paragraph at lines 74--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--75
+Underfull \hbox (badness 10000) in paragraph at lines 74--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--94
+Underfull \hbox (badness 10000) in paragraph at lines 87--103
 
  []
 
@@ -516,12 +516,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--94
 File: iitr.png Graphic file (type bmp)
 <iitr.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--113
+Underfull \hbox (badness 10000) in paragraph at lines 112--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--113
+Underfull \hbox (badness 10000) in paragraph at lines 112--122
 
  []
 
@@ -539,21 +539,21 @@ Overfull \hbox (21.50502pt too wide) in paragraph at lines 12--12
 \openout5 = `seminar.lof'.
 
  [5]
-Underfull \hbox (badness 10000) in paragraph at lines 149--168
+Underfull \hbox (badness 10000) in paragraph at lines 158--177
 
  []
 
 File: s1.png Graphic file (type bmp)
 <s1.png>
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 198--209
+Underfull \hbox (badness 10000) in paragraph at lines 207--218
 
  []
 
 File: s3.png Graphic file (type bmp)
 <s3.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--225
+Underfull \hbox (badness 10000) in paragraph at lines 230--234
 
  []
 
@@ -564,12 +564,12 @@ File: s4.png Graphic file (type bmp)
 File: s5.png Graphic file (type bmp)
 <s5.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--326
+Underfull \hbox (badness 10000) in paragraph at lines 320--335
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--337
+Underfull \hbox (badness 10000) in paragraph at lines 337--346
 
  []
 
@@ -579,17 +579,17 @@ File: s6.png Graphic file (type bmp)
 File: s7.png Graphic file (type bmp)
 <s7.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--368
+Underfull \hbox (badness 10000) in paragraph at lines 362--377
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--368
+Underfull \hbox (badness 10000) in paragraph at lines 362--377
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--417
+Underfull \hbox (badness 10000) in paragraph at lines 410--426
 
  []
 
@@ -597,66 +597,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 401--417
 File: s8.png Graphic file (type bmp)
 <s8.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--433
+Underfull \hbox (badness 10000) in paragraph at lines 435--442
 
  []
 
 File: s9.png Graphic file (type bmp)
 <s9.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 443--463
+Underfull \hbox (badness 10000) in paragraph at lines 452--472
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 443--463
+Underfull \hbox (badness 10000) in paragraph at lines 452--472
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 443--463
+Underfull \hbox (badness 10000) in paragraph at lines 452--472
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 464--482
+Underfull \hbox (badness 10000) in paragraph at lines 473--491
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 464--482
+Underfull \hbox (badness 10000) in paragraph at lines 473--491
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 500--535
+Underfull \hbox (badness 10000) in paragraph at lines 509--544
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--535
+Underfull \hbox (badness 10000) in paragraph at lines 509--544
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--535
+Underfull \hbox (badness 10000) in paragraph at lines 509--544
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 539--554
+Underfull \hbox (badness 10000) in paragraph at lines 548--563
 
  []
 
 File: s10.png Graphic file (type bmp)
 <s10.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 582--606
+Underfull \hbox (badness 10000) in paragraph at lines 591--615
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 582--606
+Underfull \hbox (badness 10000) in paragraph at lines 591--615
 
  []
 
@@ -664,57 +664,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 582--606
 File: s11.png Graphic file (type bmp)
 <s11.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 690--715
+Underfull \hbox (badness 10000) in paragraph at lines 699--724
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 690--715
+Underfull \hbox (badness 10000) in paragraph at lines 699--724
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 716--766
+Underfull \hbox (badness 10000) in paragraph at lines 725--775
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 716--766
+Underfull \hbox (badness 10000) in paragraph at lines 725--775
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 716--766
+Underfull \hbox (badness 10000) in paragraph at lines 725--775
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 716--766
+Underfull \hbox (badness 10000) in paragraph at lines 725--775
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 716--766
+Underfull \hbox (badness 10000) in paragraph at lines 725--775
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 716--766
+Underfull \hbox (badness 10000) in paragraph at lines 725--775
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 716--766
+Underfull \hbox (badness 10000) in paragraph at lines 725--775
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 767--795
+Underfull \hbox (badness 10000) in paragraph at lines 776--804
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 767--795
+Underfull \hbox (badness 10000) in paragraph at lines 776--804
 
  []
 
@@ -724,34 +724,34 @@ File: s13.png Graphic file (type bmp)
 File: s14.png Graphic file (type bmp)
 <s14.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 822--840
+Underfull \hbox (badness 10000) in paragraph at lines 831--849
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 822--840
+Underfull \hbox (badness 10000) in paragraph at lines 831--849
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 845--866
+Underfull \hbox (badness 10000) in paragraph at lines 854--875
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 845--866
+Underfull \hbox (badness 10000) in paragraph at lines 854--875
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 886--893
+Underfull \hbox (badness 10000) in paragraph at lines 895--902
 
  []
 
 File: s12.png Graphic file (type bmp)
 <s12.png>
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 930--951
+Underfull \hbox (badness 10000) in paragraph at lines 939--960
 
  []
 
@@ -761,12 +761,12 @@ File: s15.png Graphic file (type bmp)
 File: s16.png Graphic file (type bmp)
 <s16.png>
  [20]
-Underfull \hbox (badness 10000) in paragraph at lines 1063--1065
+Underfull \hbox (badness 10000) in paragraph at lines 1073--1075
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1063--1065
+Underfull \hbox (badness 10000) in paragraph at lines 1073--1075
 
  []
 
@@ -776,28 +776,28 @@ File: s17.png Graphic file (type bmp)
  [22]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1168.
+(hyperref)                removing `math shift' on input line 1178.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Delta' on input line 1168.
+(hyperref)                removing `\Delta' on input line 1178.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sigma' on input line 1168.
+(hyperref)                removing `\sigma' on input line 1178.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1168.
+(hyperref)                removing `subscript' on input line 1178.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1168.
+(hyperref)                removing `math shift' on input line 1178.
 
 File: s23.png Graphic file (type bmp)
 <s23.png>
 
-Overfull \hbox (2.0pt too wide) in paragraph at lines 1206--1208
+Overfull \hbox (2.0pt too wide) in paragraph at lines 1216--1218
  [][] 
  []
 
@@ -805,44 +805,44 @@ Overfull \hbox (2.0pt too wide) in paragraph at lines 1206--1208
 File: s24.png Graphic file (type bmp)
 <s24.png>
 
-Overfull \hbox (2.0pt too wide) in paragraph at lines 1238--1240
+Overfull \hbox (2.0pt too wide) in paragraph at lines 1248--1250
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1229--1240
+Underfull \hbox (badness 10000) in paragraph at lines 1239--1250
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1229--1240
+Underfull \hbox (badness 10000) in paragraph at lines 1239--1250
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1229--1240
+Underfull \hbox (badness 10000) in paragraph at lines 1239--1250
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1229--1240
+Underfull \hbox (badness 10000) in paragraph at lines 1239--1250
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1229--1240
+Underfull \hbox (badness 10000) in paragraph at lines 1239--1250
 
  []
 
 File: s25.png Graphic file (type bmp)
 <s25.png>
 [24] [25]
-Overfull \hbox (0.11568pt too wide) in paragraph at lines 1314--1319
+Overfull \hbox (0.11568pt too wide) in paragraph at lines 1324--1329
 \TU/AmerigoBT(0)/m/n/12 joint probability density function itself is complicated to attain statistically. Often, a first-order approximation
  []
 
 
-Overfull \hbox (29.54955pt too wide) in paragraph at lines 1344--1344
+Overfull \hbox (29.54955pt too wide) in paragraph at lines 1354--1354
 []\TU/AmerigoBT(0)/b/n/14.4 Edge-Cracked Plate Under Uniaxial Tension (Mode-I) With Varying Crack Length(Example) 
  []
 
@@ -856,53 +856,57 @@ File: s20.png Graphic file (type bmp)
 File: s21.png Graphic file (type bmp)
 <s21.png>
  [27]
-Underfull \hbox (badness 10000) in paragraph at lines 1400--1431
+Underfull \hbox (badness 10000) in paragraph at lines 1410--1441
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1400--1431
+Underfull \hbox (badness 10000) in paragraph at lines 1410--1441
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1400--1431
+Underfull \hbox (badness 10000) in paragraph at lines 1410--1441
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1400--1431
+Underfull \hbox (badness 10000) in paragraph at lines 1410--1441
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1400--1431
+Underfull \hbox (badness 10000) in paragraph at lines 1410--1441
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1400--1431
+Underfull \hbox (badness 10000) in paragraph at lines 1410--1441
 
  []
 
-[28]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1436.
- [29]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1436.
+[28] [29]
+Underfull \hbox (badness 10000) in paragraph at lines 1445--1446
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1463.
+[30]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1463.
  (./seminar.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1436.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1436.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1463.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1463.
 Package rerunfilecheck Info: File `seminar.out' has not changed.
 (rerunfilecheck)             Checksum: 67FF0CFAE6C9A022B73766D4BFBB66F5;4204.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1436.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1463.
  ) 
 Here is how much of TeX's memory you used:
- 13340 strings out of 481804
- 253285 string characters out of 5937877
+ 13346 strings out of 481804
+ 253429 string characters out of 5937877
  567075 words of memory out of 5000000
- 30112 multiletter control sequences out of 15000+600000
- 538711 words of font info for 86 fonts, out of 8000000 for 9000
+ 30115 multiletter control sequences out of 15000+600000
+ 538727 words of font info for 88 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  43i,15n,79p,1069b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on seminar.xdv (29 pages, 807512 bytes).
+Output written on seminar.xdv (30 pages, 821972 bytes).
