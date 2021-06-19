@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.7)  19 JUN 2021 20:03
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.7)  19 JUN 2021 20:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -808,39 +808,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 1140--1151
 File: s25.png Graphic file (type bmp)
 <s25.png>
  [30] [31]
-Underfull \hbox (badness 10000) in paragraph at lines 1227--1245
+Underfull \hbox (badness 10000) in paragraph at lines 1227--1243
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1227--1245
+Underfull \hbox (badness 10000) in paragraph at lines 1227--1243
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1227--1245
+Underfull \hbox (badness 10000) in paragraph at lines 1227--1243
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1227--1245
+Underfull \hbox (badness 10000) in paragraph at lines 1227--1243
 
  []
 
-[32] [33]
-Underfull \hbox (badness 10000) in paragraph at lines 1248--1249
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 1246--1247
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1267.
-[34]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1267.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1265.
+[33]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1265.
  (./seminar.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1267.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1267.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1265.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1265.
 Package rerunfilecheck Info: File `seminar.out' has not changed.
 (rerunfilecheck)             Checksum: 7459B3D43469F16CD83EE118492EF7F6;3548.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1267.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1265.
  ) 
 Here is how much of TeX's memory you used:
  13303 strings out of 481804
@@ -851,4 +851,4 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  43i,15n,79p,1069b,417s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on seminar.xdv (34 pages, 686548 bytes).
+Output written on seminar.xdv (33 pages, 684200 bytes).
