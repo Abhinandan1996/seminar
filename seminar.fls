@@ -169,14 +169,11 @@ INPUT seminar.lof
 OUTPUT seminar.lof
 INPUT s1.png
 INPUT s3.png
-INPUT s4.png
 INPUT s5.png
 INPUT s6.png
-INPUT s7.png
 INPUT s8.png
 INPUT s9.png
 INPUT s10.png
-INPUT s11.png
 INPUT s13.png
 INPUT s14.png
 INPUT s12.png
@@ -185,11 +182,8 @@ INPUT s16.png
 INPUT s17.png
 INPUT s23.png
 INPUT s24.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT s25.png
-INPUT s18.png
-INPUT s19.png
-INPUT s20.png
-INPUT s21.png
 INPUT seminar.aux
 INPUT ./seminar.out
 INPUT ./seminar.out

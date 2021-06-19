@@ -1,22 +1,15 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces load-elongation curve for fracture initiation and stable crack growth\relax }}{6}{figure.caption.3}%
-\contentsline {figure}{\numberline {2}{\ignorespaces word done to close the crack increment $\Delta a$\relax }}{7}{figure.caption.10}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Fracture stress of geometrically similar specimens, same thcikness, same material\relax }}{8}{figure.caption.15}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Thickness effect on fracture toughness\relax }}{9}{figure.caption.20}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Fracture stress as a function of crack tip radius\relax }}{9}{figure.caption.21}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Two different fracture toughness specimens, $K_1 = K_2$ \relax }}{10}{figure.caption.22}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Brittle inclusions ahead of a crack tip.\relax }}{11}{figure.caption.29}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Schematic diagrams of load vs load point displacement showing difference in fracture ductility\relax }}{11}{figure.caption.34}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Three-dimensional crack geometry.\relax }}{14}{figure.caption.39}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Displacement plots during crack propagation\relax }}{15}{figure.caption.52}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Fig.(a)Contrast between deterministic and probabilistic engineering analysis.\relax }}{17}{figure.caption.53}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Fig.(b)Statistical variation of strength ($\sigma _f$) and applied stress ($\sigma $); failure possible over crosshatched region.\relax }}{17}{figure.caption.54}%
-\contentsline {figure}{\numberline {13}{\ignorespaces General S-N curve\relax }}{19}{figure.caption.55}%
-\contentsline {figure}{\numberline {14}{\ignorespaces 2D cracked plate in scaled boundary coordinate\relax }}{20}{figure.caption.58}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Displacement in scaled boundary coordinates\relax }}{20}{figure.caption.61}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Perturbation in scaled boundary coordinates.\relax }}{22}{figure.caption.72}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Probability distribution of turbine rotor spindle alternating stress level\relax }}{23}{figure.caption.73}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Probability distribution of fatigue lifetime of defected turbine rotor spindle\relax }}{25}{figure.caption.75}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Horizontal edge-cracked plate under uniaxial tension\relax }}{26}{figure.caption.90}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Mesh of horizontal edge-cracked plate: (a) 3 sub-domain mesh; (b) 1 sub-domain mesh.\relax }}{27}{figure.caption.91}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Horizontal edge-cracked plate under uniaxial tension: (a) normalized Mode-I (b) rate of Mode-I\relax }}{27}{figure.caption.92}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Failure probability of horizontal edge-cracked plate under uniaxial tension for varying uncertainty\relax }}{28}{figure.caption.93}%
+\contentsline {figure}{\numberline {1}{\ignorespaces load-elongation curve for fracture initiation and stable crack growth[1]\relax }}{7}{figure.caption.3}%
+\contentsline {figure}{\numberline {2}{\ignorespaces word done to close the crack increment $\Delta a$[1]\relax }}{8}{figure.caption.10}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Thickness effect on fracture toughness[1]\relax }}{10}{figure.caption.19}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Fracture stress as a function of crack tip radius[1]\relax }}{11}{figure.caption.20}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Brittle inclusions ahead of a crack tip.[1]\relax }}{11}{figure.caption.21}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Schematic diagrams of load vs load point displacement showing difference in fracture ductility[1]\relax }}{12}{figure.caption.26}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Three-dimensional crack geometry.[2]\relax }}{16}{figure.caption.31}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Contrast between deterministic and probabilistic engineering analysis.[3]\relax }}{20}{figure.caption.44}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Statistical variation of strength ($\sigma _f$) and applied stress ($\sigma $); failure possible over crosshatched region.[3]\relax }}{20}{figure.caption.45}%
+\contentsline {figure}{\numberline {10}{\ignorespaces General S-N curve\relax }}{22}{figure.caption.46}%
+\contentsline {figure}{\numberline {11}{\ignorespaces 2D cracked plate in scaled boundary coordinate[4]\relax }}{23}{figure.caption.49}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Displacement in scaled boundary coordinates[4]\relax }}{24}{figure.caption.52}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Perturbation in scaled boundary coordinates[4]\relax }}{26}{figure.caption.63}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Probability distribution of turbine rotor spindle alternating stress level[3]\relax }}{29}{figure.caption.64}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Probability distribution of fatigue lifetime of defected turbine rotor spindle[3]\relax }}{30}{figure.caption.66}%

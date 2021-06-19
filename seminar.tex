@@ -135,10 +135,19 @@ knowledge.\\~\\
 \pagebreak
 %------------------------------------------------------------------
 }
+
+\begin{onehalfspace}
+    
+
+    
 \tableofcontents
 \pagebreak
 \listoffigures
 \pagebreak
+\end{onehalfspace}
+\begin{doublespace}
+    
+
 \rule{\textwidth}{.1em}
 \begin{center}
 \textbf{Abstract}
@@ -178,8 +187,8 @@ widely used to study non-linear fracture mechanics.
 \begin{figure}[H]
     \centering
     \fbox{\includegraphics[width=.5\textwidth]{s1.png}}
-    \captionsetup{labelformat=empty}
-    \caption{load-elongation curve for fracture initiation and stable crack growth}  
+    %\captionsetup{labelformat=empty}
+    \caption{load-elongation curve for fracture initiation and stable crack growth[1]}  
 \end{figure}
 \subsection{Elastic Stress Field}Linear elastic fracture mechanics (LEFM) is based on the elastic solution of the crack tip stress field. Williams has shown that in a cracked plate 
 $\sigma_{ij}$, $\epsilon_{ij}$ and $u_i$ can be expressed in terms of:
@@ -221,8 +230,8 @@ the crack within $\Delta a$ is:
 \begin{figure}[H]
     \centering
     \fbox{\includegraphics[width=.4\textwidth]{s3.png}}
-    \captionsetup{labelformat=empty}
-    \caption{word done to close the crack increment $\Delta a$}
+    %\captionsetup{labelformat=empty}
+    \caption{word done to close the crack increment $\Delta a$[1]}
     
 \end{figure}
 
@@ -268,12 +277,12 @@ than the fracture stress of a small specimen with a short crack as shown schemat
 below.
 
 
-\begin{figure}[H]
-    \centering
-    \fbox{\includegraphics[width=.4\textwidth]{s4.png}}
-    \captionsetup{labelformat=empty}
-    \caption{Fracture stress of geometrically similar specimens, same thcikness, same material}
-\end{figure}
+% \begin{figure}[H]
+%     \centering
+%     \fbox{\includegraphics[width=.4\textwidth]{s4.png}}
+%     %\captionsetup{labelformat=empty}
+%     \caption{Fracture stress of geometrically similar specimens, same thcikness, same material}
+% \end{figure}
 
 \subsubsection{Global Energy Balance Theory}
 At fracture we have:
@@ -314,8 +323,8 @@ must arise from the difference in plastic energy dissipation rates.
 \begin{figure}[H]
     \centering
     \fbox{\includegraphics{s5.png}}
-    \captionsetup{labelformat=empty}
-    \caption{Thickness effect on fracture toughness}
+    %\captionsetup{labelformat=empty}
+    \caption{Thickness effect on fracture toughness[1]}
 \end{figure}
 In order to explain the observed experimental phenomena, it is necessary to resort to the difference
 in the state of crack tip stress field. The lower plastic energy dissipation rate in the state of plane strain is
@@ -347,8 +356,8 @@ independent of $R_i$. In our analysis, we assume $R$ is always less than $R_c$.
 \begin{figure}[H]
     \centering
     \fbox{\includegraphics[width=.42\textwidth]{s6.png}}
-    \captionsetup{labelformat=empty}
-    \caption{Fracture stress as a function of crack tip radius}
+    %\captionsetup{labelformat=empty}
+    \caption{Fracture stress as a function of crack tip radius[1]}
 \end{figure}
 
 Let us consider geometrically similar elliptical notches in geometrically similar specimens. The major
@@ -356,55 +365,6 @@ axis of the ellipse is 2$a$. All the specimens are stressed to the same value of
 component of $\sigma_{ij}$ or $\epsilon_{ij}$ in all of these specimens has the same value at the geometrically similar points,
 $P((r/a), \theta)$. If $\sigma_{ij}$ or $\epsilon_{ij} $control the fracture process and if one specimen fails at a given $\sigma_\infty$ all the
 specimens should fail at the same applied stress $\sigma_\infty$, which again contradicts the experimental observations.
-
-
-\subsubsection{The Theory Of K-characterization}
-Under the condition of small scale yielding, SSY, $K$ characterizes the crack tip stresses and strains
-even within $r_p$. Let us illustrate this with two samples of different geometry but they are loaded to the
-same $K$-value. These samples are made of the same material and have the same thickness
-\\\\
-Within the region of $r_c(\theta)$ near the cack tip, the singular terms, $\sigma_{ij} = (K/\sqrt{(2 \pi r)} \bar{\sigma}_{ij}(\theta))$
-dominate the stress field. $r_e$ is the characteristic elastic crack field zone. For elastic solids, if $r_{e1} = r_{e2}$ the boundary
-stresses on $r_{e1}$ and $r_{e2}$ must be equal to each other, since $K_1 = K_2$.
-\\\\
-In metallic specimens, closer to the crack tip, plastic deformation takes place within $r_p(\theta)$. Let us
-examine the regions within $r_{e1}$ and $r_{e2}$ as free bodies given below:
-\begin{figure}[H]
-    \centering
-    \fbox{\includegraphics[width=.4\textwidth]{s7.png}}
-    \captionsetup{labelformat=empty}
-    \caption{Two different fracture toughness specimens, $K_1 = K_2$ }
-\end{figure}
-In our case, $r_{e1}(\theta) = r_{e2}(\theta)$. If $r_p \ll r_e$ the
-stress relaxation within $r_p$ does not disturb much the boundary stresses on $r_e$, therefore, the boundary
-stresses on $r_e$ are essentially those given by the singular terms of the linear elastic solution. Since
-$K_1 = K_2$, the boundary stresses on these two free bodies must be the same. With the same geometric
-shape and size and the same boundary stresses, we must have:
-
-\begin{align*}
-    &\sigma_{ij}(r, \theta)_1 = \sigma_{ij}(r, \theta)_2 \\
-    &\epsilon_{ij}(r, \theta)_1 = \epsilon_{ij}(r, \theta)_2 \tag{8} \label{8}
-\end{align*}
-$K_c$ is invariant to planar geometric variation.
- 
-\begin{align*}
-    \begin{array}{@{}c@{}} a\\L \end{array} \geq 2.5 \left( \frac{K_c}{\sigma_c}\right) ^2 \tag{9} \label{9}
-\end{align*}
-The crack tip $\sigma_{ij}$ and $\epsilon_{ij}$ are not only affected by the planar dimensions of “a” and “L”. They are also
-strongly affected by the specimen thickness, t.The size requirements needed to
-satisfy the condition of SSY and that of plane strain are
- 
-\begin{align*}
-    \begin{array}{@{}c@{}} t\\a\\L \end{array} \geq 2.5 \left( \frac{K_c}{\sigma_c}\right) ^2 \tag{10} \label{10}
-\end{align*}
-The condition of $r_e \gg r_p$ is known as the condition of small scale yielding. Wilson has found that
-the size of $r_e$ is quite small when compared with other specimen dimensions, only a few per cent of other
-planar dimensions of a sample. However, $r_e \propto specimen\ size$; so, in principle, the
-condition of SSY can always be satisfied by using a large enough sample. The condition of $r_e$ is a
-sufficient but not necessary condition for the validity of the LEFM. The condition could be unduly
-restrictive in terms of specimen size requirements. The necessary condition for the validity of the linear
-elastic fracture mechanics is that $K$ would be able to characterize the crack tip stress or strain
-component at the location of the defined fracture process.
 
 \subsection{Fracture Process Zone}
 Materials are inhomogeneous. They contain brittle and ductile phases, inclusion particles, grain
@@ -427,8 +387,8 @@ hydrogen embrittlement, and embrittlement by $\text{O}_\text{2}$, $\text{Cl}_\te
 \begin{figure}[H]
     \centering
     \fbox{\includegraphics[width=.4\textwidth]{s8.png}}
-    \captionsetup{labelformat=empty}
-    \caption{Brittle inclusions ahead of a crack tip.}
+    %\captionsetup{labelformat=empty}
+    \caption{Brittle inclusions ahead of a crack tip.[1]}
 \end{figure}
 
 
@@ -467,8 +427,8 @@ This material is ductile and tough.
 \begin{figure}[H]
     \centering
     \fbox{\includegraphics[width=.5\textwidth]{s9.png}}
-    \captionsetup{labelformat=empty}
-    \caption{Schematic diagrams of load vs load point displacement showing difference in fracture ductility}
+    %\captionsetup{labelformat=empty}
+    \caption{Schematic diagrams of load vs load point displacement showing difference in fracture ductility[1]}
 \end{figure}
 $K$ and $J$ characterize $\sigma_{ij}$ and $\epsilon_{ij}$ within the fracture process zone. The maximum tensile stress, $\sigma_{\text{max}}$,
 could be the parameter that controls fracture initiation in the case of brittle particles, The nucleated
@@ -610,8 +570,8 @@ near the crack front, given as
 \begin{figure}[H]
     \centering
     \fbox{\includegraphics[width=.55\textwidth]{s10.png}}
-    \captionsetup{labelformat=empty}
-    \caption{Three-dimensional crack geometry.}  
+    %\captionsetup{labelformat=empty}
+    \caption{Three-dimensional crack geometry.[2]}  
 \end{figure}
 
 
@@ -663,64 +623,6 @@ generalized; eq. (20) is the general $G - K$ relation; the value of $G_{max}$ is
 from eq. (19) for self-similar crack extension; and $G_{max}$ is greater than the value of the $J$-integral
 and hence it is fair to say that the $J$-integral is only applicable to self-similar crack extension
 problems.
-\subsubsection{Dynamic Crack Propogation}
-In addition to the study of static LEFM problems, much work has been performed for
-dynamic LEFM problems. In the dynamic case, two problems are important: that of a running
-crack and that of a static crack with elastic waves impinging. The problem of stress intensity factor
-calculation for static cracks in elastic materials subjected to time-dependent loading is no more
-difficult than the corresponding static problem. The same solution methodologies are employed and
-the results can be calculated to the same accuracy. Computational requirements are greater;
-however, no new problems arise numerically. The problem of a running crack in an elastic material
-is much different from the problem of a static crack. FEM solutions have had a major impact on
-this area. Few analytic solutions to realistic problems are available (even in two dimensions);
-therefore, robust numerical approaches are essential. The first realistic solution to the problem of
-a running crack was presented by Anderson. They introduced a nodal release algorithm
-which models the changing boundary conditions of a growing crack. The method has proved to
-be very robust and easy to implement, even in commercial finite element codes, and is widely
-employed. This algorithm has allowed many researchers to study running crack problems for a wide
-variety of geometries and loadings.  An interesting example of dynamic crack propagation
-simulation involves the problems of interacting cracks. Consider the problem of two cracks in a
-sheet which are opened by wedge loads. The cracks at two sides of the sheet are slightly
-misaligned to provide initial asymmetry. Figure shows the cracks at three stages of the analysis.
-Initially, the cracks repel each other and, as propagation continues, they attract. At the final stage,
-the two cracks intersect. Figure shows the stress intensity factor histories as a function of crack
-length. The positive mode II component is evident during the avoidance stage and negative mode
-II is evident during attraction.
-
-
-\begin{figure}[H]
-    \centering
-    \fbox{\includegraphics[width=.9\textwidth]{s11.png}}
-    \captionsetup{labelformat=empty}
-    \caption{Displacement plots during crack propagation}  
-\end{figure}
-
-\subsection{Adaptive Finite Element Analysis}
-One of the biggest problems with finite element analysis (FEA) lies in the fact that an
-assessment of the reliability of the FE solution is difficult to obtain. The FE
-analyst is usually guided by experience in designing and assessing the quality of the mesh. After
-solution, simple checks, such as examining the stress discontinuities between elements, can be made
-to assess the quality of the solution. Based on the analyst's experience the solution is accepted or
-rejected. If this approach can be automated, not only would the solution be improved but a large
-saving in man-hours would be made.
-\\\\
-The projection or stress smoothing type error estimators are a global measure of the
-discretization error contained in any given FEA. For adaptive schemes the local error does tend
-to approach the global (average) error in an iterative fashion. The basic idea of these estimators
-is that an approximation of the error due to the mesh discretization can be made given the FEA
-solution and an appropriate better approximation to the continuous stress solution. Adaptive mesh
-generation can be approached in a variety of ways, the two most common being the h- and
-p-versions. The h-version improves the accuracy of the solution by refining the mesh, while the
-p-version uses a fixed mesh but increases the polynomial degree of the shape functions. In the
-present work the projection type error estimators combined with h-version mesh refinement
-algorithms which use quadrilateral elements are investigated for two-dimensional linear elastic
-problems. The mesh refinement algorithms are based on simple and hierarchical schemes
-for subdividing quadrilaterals with transitioning, which avoids the need for constraint equations
-to enforce compatibility at element boundries. Another scheme is based on using constraint
-equations to enforce compatibility between elements. This h-version will not have as high a
-convergence rate as a combined h-p-version (or even a p-version), but the h-version is easier to
-program and the results are easier to interpret,
-\\\\\rule{\textwidth}{.1em}
 \section{Probabilistic Fracture Mechanics}
 The interest in applying statistics to assess structural reliability has continued to
 increase. This is evident from the large amount of work in
@@ -818,14 +720,14 @@ is equally valid and leads to P($E$) = P(($Y$)< 1)
 \begin{figure}[H]
     \centering
     \fbox{\includegraphics[width=.6\textwidth]{s13.png}}
-    \captionsetup{labelformat=empty}
-    \caption{Fig.(a)Contrast between deterministic and probabilistic engineering analysis.}  
+    %\captionsetup{labelformat=empty}
+    \caption{Contrast between deterministic and probabilistic engineering analysis.[3]}  
 \end{figure}
 \begin{figure}[H]
     \centering
     \fbox{\includegraphics[width=.4\textwidth]{s14.png}}
-    \captionsetup{labelformat=empty}
-    \caption{Fig.(b)Statistical variation of strength ($\sigma_f$) and applied stress ($\sigma$); failure possible over crosshatched region.}  
+    %\captionsetup{labelformat=empty}
+    \caption{Statistical variation of strength ($\sigma_f$) and applied stress ($\sigma$); failure possible over crosshatched region.[3]}  
 \end{figure}
 
 Here, $G$
@@ -835,7 +737,7 @@ form, $G$ may be obtained from standard least-
 squares fitting of the engineering data or by the repetitive
  analysis procedure.the $x_i$ are most realistically described as ran
 dom variables $X_i$ rather than single assigned deterministic values. 
-As shown in fig.(a), statistical interpretation 
+As shown in fig.9, statistical interpretation 
 of the $X_i$ results in the interpretation of
 strength margin as a random variable. The statistical
 interpretation also allows the analyst to quantify his
@@ -909,7 +811,7 @@ for N is required.
 \begin{figure}[H]
     \centering
     \fbox{\includegraphics[width=.6\textwidth]{s12.png}}
-    \captionsetup{labelformat=empty}
+    %\captionsetup{labelformat=empty}
     \caption{General S-N curve}  
 \end{figure}
 \subsection{Mathematical Techniques}
@@ -968,14 +870,14 @@ are denoted \{$x$\} and \{$y$\},
 with shape functions [$N( \eta )$] in the local coordinate $\eta$ . Thus for any point on the boundary the Cartesian 
 coordinates ($x, y$), can be interpolated by 
 \begin{align*}
-    x = [N(\eta)]\{x\}\\
+    x = [N(\eta)]\{x\},\ \ 
     y = [N(\eta)]\{y\} \tag{21} \label{21}
 \end{align*}
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=.4\textwidth]{s15.png}}
-    \captionsetup{labelformat=empty}
-    \caption{2D cracked plate in scaled boundary coordinate}  
+    \fbox{\includegraphics[width=.33\textwidth]{s15.png}}
+    %\captionsetup{labelformat=empty}
+    \caption{2D cracked plate in scaled boundary coordinate[4]}  
 \end{figure}
 
 The domain is generated by scaling the boundary along the radial coordinate $\xi$ 
@@ -1015,8 +917,8 @@ obtained by interpolating the nodal displacement functions
 \begin{figure}[H]
     \centering
     \fbox{\includegraphics[width=.4\textwidth]{s16.png}}
-    \captionsetup{labelformat=empty}
-    \caption{Displacement in scaled boundary coordinates}  
+    %\captionsetup{labelformat=empty}
+    \caption{Displacement in scaled boundary coordinates[4]}  
 \end{figure}
 
 Applying a weighted residual technique in the $\eta$ direction leads to the following scaled boundary finite element equation in displacement
@@ -1100,16 +1002,15 @@ denoted by accent  and domain coordinate translation by
     \tilde{\hat{y}} = \hat{y} + \Delta z
 \end{align*}
 and similarly the nodal coordinate translation by
-
 \begin{align*}
     \{\tilde{x}\} = \{x\} + \Delta a\\
     \{\tilde{y}\} = \{y\} + \Delta z
 \end{align*}
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=.5\textwidth]{s17.png}}
-    \captionsetup{labelformat=empty}
-    \caption{Perturbation in scaled boundary coordinates.}  
+    \fbox{\includegraphics[width=.4\textwidth]{s17.png}}
+    %\captionsetup{labelformat=empty}
+    \caption{Perturbation in scaled boundary coordinates[4]}  
 \end{figure}
 
 \subsection{Fracture Failure Criteria}
@@ -1214,8 +1115,8 @@ is used to determine $A_i$ obeys the relation $\log A_i = \bar{N}( -0.9586, 0.75
 \begin{figure}[H]
     \centering
     \fbox{\includegraphics[width=\textwidth]{s23.png}}
-    \captionsetup{labelformat=empty}
-    \caption{Probability distribution of turbine rotor spindle alternating stress level}  
+    %\captionsetup{labelformat=empty}
+    \caption{Probability distribution of turbine rotor spindle alternating stress level[3]}  
 \end{figure}
 
 \subsubsection{The probabilistic analysis}
@@ -1246,7 +1147,7 @@ and $k_\alpha$ is the standard deviate corresponding to particular $\alpha$
 \begin{figure}[H]
     \centering
     \fbox{\includegraphics[width=\textwidth]{s24.png}}
-    \captionsetup{labelformat=empty}  
+    %\captionsetup{labelformat=empty}  
 \end{figure}
 
 
@@ -1254,19 +1155,17 @@ and $k_\alpha$ is the standard deviate corresponding to particular $\alpha$
 The MC program can be utilized to investigate the effect of non-zero 
 initiation life $N_i$ on total fatigue life. For example, the total fatigue life can be written as
 \begin{align*}
-    N = N_i(\Delta \sigma, A_i, D) + N_{pr}(\Delta \sigma, A_i, C)
-\end{align*}
-where $N_i$ is proportional to $D$, a dimensionless random
-variable with distribution
-\begin{align*}
-    \log D = \bar{N}(0, 0.196)
+    &N = N_i(\Delta \sigma, A_i, D) + N_{pr}(\Delta \sigma, A_i, C)\\
+&\text{where $N_i$ is proportional to $D$, a dimensionless random
+variable with distribution}\\
+  &\log D = \bar{N}(0, 0.196)
 \end{align*}
 
 \begin{figure}[H]
     \centering
     \fbox{\includegraphics[width=.4\textwidth]{s25.png}}
-    \captionsetup{labelformat=empty} 
-    \caption{Probability distribution of fatigue lifetime of defected turbine rotor spindle} 
+    %\captionsetup{labelformat=empty} 
+    \caption{Probability distribution of fatigue lifetime of defected turbine rotor spindle[3]} 
 \end{figure}
 
 
@@ -1309,36 +1208,9 @@ estimation for the probability that failure has occurred, $P_F$ , can be directl
 \begin{align*}
     P_F = \frac{N_F}{N} \tag{30}
 \end{align*}
-Inevitably, the MCS method would require a sufficient number of entries in the response matrix [K s ] for a reliable 
+Inevitably, the MCS method would require a sufficient number of entries in the response matrix [$K_s$ ] for a reliable 
 probabilistic analysis, particularly when the uncertainty in crack size is very high.
 
-\subsubsection{First-Order Second-Moment (FOSM) Reliability}
-Although it can be determined computationally, the probability of failure P F is also commonly represented by the integral
-\begin{align*}
-    P_F = \int_{g(\text{X}) \le 0} f_{\text{X}}(\text{X})d\text{X} \tag{31}
-\end{align*}
-where X is the vector of random variables, $f_\text{X}$ (X) is the joint probability density function, and g(X) is the performance function
-which is given by
-\begin{align*}
-    g(X) = K_{Ic} - K
-\end{align*}
-The integral is difficult to evaluate explicitly due to multiple integrals that need to be performed, while the joint
-probability density function itself is complicated to attain statistically. Often, a first-order approximation technique of the
-integral is required. A simple example of this is the first-order second-moment (FOSM) method. The controlling 
-characteristic parameter of the FOSM is defined as the Cornell reliability index $\beta$
-\begin{align*}
-    \beta = \frac{\mu_{K_{Ic}}-\mu_K}{\sqrt{S_{K_{Ic}}^2 - S_K^2}} \tag{32}
-\end{align*}
-
-where $\mu$ and $S$ , are the statistical mean values and the standard deviations of the fracture toughness $K_{Ic}$ and
-stress intensity factor (SIF).Using this index, the probability of failure is approximated by
-\begin{align*}
-    P_F = \phi(-\beta) \tag{33}
-\end{align*}
-where $\phi(u)$ is the cumulative probability distribution function and is given by
-\begin{align*}
-    \phi(u) = \frac{1}{\sqrt{2 \pi}}\int_{-\infty}^{u} e^{\frac{-t^2}{2}}  \tag{34}
-\end{align*}
 \subsection{Summary Of Monte Carlo Probabilistic Method}
 The reliability of cracked structures are evaluated by a Monte Carlo probabilistic method. Uncertainties in the crack configuration 
 are modeled using a shape sensitivity approach with the aid of the scaled boundary finite element method
@@ -1351,79 +1223,13 @@ multi-cracks
 
 
 \rule{\textwidth}{.1em}
-\subsection{Edge-Cracked Plate Under Uniaxial Tension (Mode-I) With Varying Crack Length(Example)}
-The edge-cracked rectangular plate has dimensions 2L and W. The upper and lower ends of the plate are subjected
-to tensile stress r 1 . The crack is horizontal and its length a varies. This is an example of a Mode-I problem.
-
-\begin{figure}[H]
-    \centering
-    \fbox{\includegraphics[width=.3\textwidth]{s18.png}}
-    \captionsetup{labelformat=empty}
-    \caption{Horizontal edge-cracked plate under uniaxial tension}  
-\end{figure}
-\subsubsection{Shape Sensitivity Analysis}
-Coinciding with $g(X) = K_{Ic} - K$, the dimensions of the plate is chosen as $L/W = 1$ with far-field applied tensile stress $\sigma^\infty$ = 1 unit. The
-elastic material properties are taken as Young’s modulus$ E = 20.7 x 10^6 $units and Poisson’s ratio$\nu$ = 0.3. The normalized
-crack length $a/W$ is varied from 0.1-0.8. For relatively small crack sizes $a/W \le 0.2$ the rectangular plate is divided into 3
-sub-domains (Fig. a) with 14 elements (210 nodes), while for larger crack sizes $0.2 < a/W \le 0.8$ only 1 sub-domain is used
-(Fig. b) with 12 elements (190 nodes).
-
-\begin{figure}[H]
-    \centering
-    \fbox{\includegraphics[width=.6\textwidth]{s19.png}}
-    \captionsetup{labelformat=empty}
-    \caption{Mesh of horizontal edge-cracked plate: (a) 3 sub-domain mesh; (b) 1 sub-domain mesh.}  
-\end{figure}
-The computed normalized Mode-I stress intensity factor (SIF) $K_1/\sigma\sqrt{\pi a}$ is plotted as a variation of the normalized crack
-length $a/W$ . Note that this is reflective of the Mode-I response matrix [$K_s$ ]. Acceptable convergence is achieved using
-9-node, 11-node, and 15-node elements . The corresponding derivative $\partial K_I/\partial a$ is calculated and plotted. 
-Analytical solutions are also provided for an infinite domain (i.e. $L/
-W = \infty$).
-\begin{figure}[H]
-    \centering
-    \fbox{\includegraphics[width=.55\textwidth]{s20.png}}
-    \captionsetup{labelformat=empty}
-    \caption{Horizontal edge-cracked plate under uniaxial tension: (a) normalized Mode-I (b) rate of Mode-I}  
-\end{figure}
-{\it Probabilistic analysis } A probabilistic analysis is carried out for the same plate. Adopting the dimensions of the plate
-are taken to be W = 0.508 m  and 2L = 5.08 m  (i.e.$L/W = 5$) with randomness (uncertainty) in the applied farfield
- tensile stress of r 1 , crack length a, Young’s modulus $E$ and Poisson’s ratio $\nu$ , and fracture toughness $J_{Ic}$ . The Mode-I response 
- matrix [$K_s $] is calculated using the scaled boundary finite element method (SBFEM). For the sake of comparison with
-the aforementioned reference, the value of the J-integral, yet another fracture parameter commonly used in probabilistic
-analysis, is determined by the Griffith-Irwin relation given as $J = K^2 /E$ for the plane stress condition. The load, crack size,
-and material properties are treated as statistically independent random variables. The Monte Carlo simulation (MCS)
-method is used to determine the probability of failure P F . The mean far-field tensile stress is indicated as $E[\sigma^\infty$] where E[.] is
-the expectation (mean) operator. Figure plots the probability of failure P F VS . the mean far-field tensile stress $E[\sigma^\infty$] for both
-the deterministic ($COV^{a/W}$ = 0\%) and random ($COV^{a/W}$ = 5\%, 10\%, and 15\%) crack sizes. As expected, the results indicate that the
-failure probability increases with the $COV^{a/W}$(uncertainty).The failure probability can be much larger than the probabilities
-calculated for a deterministic crack size, particularly when the uncertainty of a/W is large.
-\begin{figure}[H]
-    \centering
-        \fbox{\includegraphics[width=.5\textwidth]{s21.png}}
-    \captionsetup{labelformat=empty}
-    \caption{Failure probability of horizontal edge-cracked plate under uniaxial tension for varying uncertainty}  
-\end{figure}
-
-
-\rule{\textwidth}{.1em}
 \section{Conclusion}
 $\Rightarrow$ Fracture initiation and stable crack growth are local fracture phenomena. Therefore, in order to
 apply the energy principle, the variation of the local crack tip stresses and strains and the associated
 detailed fracture process have to be taken into consideration
-\\\\$\Rightarrow$ Fracture toughness is the measure of the fracture ductility of a material. The fracture ductility of
-a material is a function of the superimposed hydrostatic tensile stress. The tearing modulus is the
-measure of the increase in fracture ductility as the hydrostatic tension is reduced when the fr icture
-surface changes from mode I to a combination of modes I, II, and III during stable crack growth.
 \\\\$\Rightarrow$ In order to extend fracture mechanics beyond the realms of K and J, the fracture mechanism has
 to be found, the crack tip stress and/or strain directly responsible for the fracture process has to be
 established, and the local stresses and strains have to be related to far field parameters.
-\\\\$\Rightarrow$ The stress smoothing error estimators highlighted in this work seem to offer many advantages.
-They appear to be robust and efficient. Further work is needed in comparing these and other
-estimators so that they can be incorporated into a commercial adaptive FE program.
-There are many other areas of the adaptive FEM that need to be investigated, such as error
-estimators, solution algorithms, extension to three dimensions, non-linear and dynamic analyses
-and the incorporation of these in an optimized user-friendly environment using ideas of
-knowledge-based systems and expert systems for fracture-proof design
 \\\\$\Rightarrow$ A probabilistic fracture mechanics (PFM) analysis is often necessary in order to achieve accurate
 estimates of reliability of structural components and
 to study the effects on reliability of systematic and
@@ -1435,10 +1241,7 @@ facilitate future PFM and other engineering probability and risk analyses.
 \\\\$\Rightarrow$ The reliability of cracked structures are evaluated by a Monte Carlo probabilistic method. Uncertainties in the crack configuration are modeled using a shape sensitivity approach with the aid of the scaled boundary finite element method
 (SBFEM). In contrast to the finite element method, efficiency, simplicity, and versatility in achieving this task is recognizable
 with the SBFEM since no fine internal meshing nor remeshing is necessary for shape sensitivity calculations, noticeably
-reducing computational effort. Comparative studies show good agreement with results obtained from references. For the
-same problem, considerably lesser number elements and nodes are required. Indeed, the SBFEM can substantiate for accurate probabilistic fracture analysis. The present technique can also be extended to study the reliability of structures with
-multi-cracks.
-
+reducing computational effort. 
 
 
 \pagebreak
@@ -1459,6 +1262,7 @@ multi-cracks.
 
 \end{flushleft}
 
+\end{doublespace}
 
 \end{document}  
     
